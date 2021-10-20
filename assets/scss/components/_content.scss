@@ -1,0 +1,26 @@
+.mod-content {
+	ul {
+		list-style-type: none;
+		padding-left: 2rem;
+		li {
+			position: relative;
+			padding-left: 0;
+			margin-left: 0;
+			&:after {
+				position: absolute;
+				top: 7px;
+				left: -2rem;
+				width: 8px;
+				height: 8px;
+				content: '';
+				background: $greendark;
+				border-radius: 30px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.mod-content {
+	}
+}

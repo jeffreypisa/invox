@@ -1,0 +1,10 @@
+.btn {
+	background: $greendark;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 28px;
+	&:hover, &:focus, &:target {
+		background: $green;
+		color: #fff !important;
+	}
+}

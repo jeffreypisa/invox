@@ -1,0 +1,12 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<article class="post-type-{{ post.post_type }} firststrook-{% for item in post.get_field('blokken') %}{% if loop.first %}{{ item.achtergrond }}{% endif %}{% endfor %}" id="post-{{ post.ID }}">
+		{% if fn('is_front_page') %}
+			{% include 'partial/bannerslider.twig' %}
+		{% else %}
+			{% include 'partial/banner.twig' %}
+		{% endif %}
+		{% include 'pagebuilder.twig' %}
+	</article>
+{% endblock %}

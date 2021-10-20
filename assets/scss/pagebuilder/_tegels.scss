@@ -1,0 +1,28 @@
+.bg-white.mod-tegels + .bg-white.mod-tegels {
+	padding-top: 30px !important;	
+}
+
+.mod-tegels {
+	.tegel {
+		border: 1px solid $greendark;
+		border-radius: 10px;
+		text-align: center;
+		padding: 20px 10px;
+		height: 100%;
+		h2 {
+			font-size: 28px;
+			line-height: 32px;
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.mod-tegels {
+		.tegel {
+			h2 {
+				font-size: 35px;
+				line-height: 24px;
+			}
+		}
+	}	
+}

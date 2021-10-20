@@ -1,0 +1,24 @@
+<section class="mod-tegels {{ item.achtergrond }}" data-scroll-section>
+	<div class="container anime-fadein {% if item.centreren %} text-center {% endif %}">
+		{% if item.titel %}
+			<h2> {{ item.titel }}</h2>
+		{% endif %}
+		<div class="row g-2 g-md-3 g-lg-4 g-xl-5 row-flex">
+			{% for item in item.tegels %}
+				<div class="col-6 col-md-4">
+					<div class="tegel">
+						<div class="d-inline-block mb-1" style="width: 100%; max-width: 400px">
+							<div class="image-holder image ratio-4x3">
+								<div class="fill-space bg-cover" style="background-image: url({{ Image(item.afbeelding)|resize(1024) }})"></div>
+							</div>
+						</div>
+						<h2 class="titel altfont weight-400 mb-0 mb-md-2"> {{ item.titel }} </h2>
+						<div class="d-none d-md-block">{{ item.tekst }}</div>
+					</div>
+					<br>
+				</div>
+			{% endfor %}
+		</div>
+		<br>
+	</div>
+</section> 

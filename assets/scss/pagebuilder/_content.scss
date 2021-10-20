@@ -1,0 +1,72 @@
+.mod-content {
+	strong {
+		color: $greendark;
+	}
+	.dier {
+		border: 1px solid $greendark;
+		padding: 10px;
+		border-radius: 10px;
+		.text-sm {
+			font-size: 12px;
+			line-height: 24px;
+			strong {
+				font-weight: 500;
+				color: $greendark;
+			}
+		}
+	}
+	.tekst {
+		margin-bottom: 30px;
+	}
+	.accordion {
+		.item {
+			margin-bottom: 20px;
+			p {
+				margin: 0;
+			}
+			.heading {
+				display: block;
+				text-decoration: none;
+				cursor: pointer;
+				min-height: 24px;
+				padding-bottom: 0;
+				h5, img {
+					transition: 0.5s $ease;
+				}
+				h5 {
+					display: block;
+					line-height: 26px;
+				}
+				&[aria-expanded=true] {
+					img {
+						transform: rotate(225deg);
+					}
+				}
+				&:hover {
+					h5 {
+						color: $greenlight;		
+					}	
+				}
+			}
+			.content {
+				padding-top: 10px;
+				padding-left: 52px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.mod-content {
+		.dier {
+			max-width: 280px;
+			margin: 0 auto;
+			hr {
+				
+			}
+		}
+		.w80 {
+			max-width: 80%;
+		}
+	}
+}

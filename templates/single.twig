@@ -1,0 +1,68 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="content-wrapper">
+		<article class="post-type-{{ post.post_type }}" id="post-{{ post.ID }}">
+
+			<section class="mod-content pt-2 pt-md-5"  data-scroll-section>
+				<div class="container">
+					<a href="{{ site.url }}/jobs" class="d-block font-small text-bluedark text-decoration-none mb-5"> 
+						<div class="row g-3">
+							<div class="col-auto">
+								<img class="icon" width="12" src="{{ theme.link }}/assets/img/arrow_left_orange.svg" alt="back to overview">
+							</div>
+							<div class="col d-flex align-items-center">
+								Back to overview 
+							</div>
+						</div>
+					</a>
+					<div class="row">
+						<div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
+							<h3 class="altfont text-orange weight-400 mb-3">Will you be our next...</h3>
+							<h1 class="article-h1 mt-0 mb-4">{{ post.title }}</h1>
+							<h4 class="mt-0 mb-5"> {{ post.uren }} <span class="text-orange"> ___ </span> {{ post.afdeling }}  <span class="text-orange"> ___ </span> {{ post.opleiding }} </h4>
+							{{post.content}}
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mod-form bg-lightgrey"  data-scroll-section>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+							<h2> Apply for your future job </h2>
+							{{ options.jobs_form }}
+						</div>
+					</div>
+				</div>
+			</section>
+			{% if vacatures|length > 0 %}
+				<section class="mod-jobs"  data-scroll-section>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-10 offset-md-1">
+								<h2> More cool jobs </h2>
+								{% for item in vacatures %}
+									<a href="{{ item.link }}" class="card box-shadow bg-white mb-3">
+										<div class="row g-0">
+											<div class="col">
+												<div class="card-body">
+													<span class="text-orange"><strong>{{ item.title }}</strong></span> <span> {{ item.locatie }} </span>
+												</div>
+											</div>
+											<div class="col-auto bg-bluedark d-flex align-items-center">
+												<div class="card-body ">
+													Info / Apply
+												</div>
+											</div>
+										</div>
+									</a>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				</section> 
+			{% endif %}
+		</article>
+	</div><!-- /content-wrapper -->
+{% endblock %}

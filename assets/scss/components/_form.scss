@@ -1,0 +1,13 @@
+body .nf-form-content button, 
+body .nf-form-content input[type=button], 
+body .nf-form-content input[type=submit] {
+	@extend .btn;
+	@extend .btn-primary;
+	height: auto;
+}
+
+body .nf-form-content .list-select-wrap .nf-field-element>div, 
+body .nf-form-content input:not([type=button]), 
+body .nf-form-content textarea {
+	background: #fff;
+}

@@ -1,0 +1,18 @@
+{% set sectionno = '0' %}
+
+{% for item in post.get_field('blokken') %}
+
+	{% set sectionno = sectionno + '1' %}
+	
+	{% if item.acf_fc_layout == 'content' %}
+		{% include 'pagebuilder/content.twig' %}
+	
+	{% elseif item.acf_fc_layout == 'tegels' %}
+		{% include 'pagebuilder/tegels.twig' %}
+	
+	{% elseif item.acf_fc_layout == 'video' %}
+		{% include 'pagebuilder/video.twig' %}
+		
+	{% endif %}
+  
+{% endfor %}

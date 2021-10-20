@@ -1,0 +1,13 @@
+.single {
+	main {
+		padding-top: 100px;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.single {
+		main {
+			padding-top: 140px;
+		}
+	}
+}
