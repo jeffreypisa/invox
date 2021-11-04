@@ -1,0 +1,15 @@
+.mod-cta {
+	padding: 100px 0;
+}
+
+@include media-breakpoint-up(md) {
+	.mod-cta {
+		padding: 120px 0;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.mod-cta {
+		padding: 160px 0;
+	}
+}

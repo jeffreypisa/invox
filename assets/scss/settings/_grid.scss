@@ -31,6 +31,21 @@ $container-max-widths: (
 // scss-docs-end container-max-widths
 
 
+.row.g-10 {
+  margin: 0 -20px;
+  > * {
+    padding: 0 20px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .row.g-10 {
+    margin: 0 -50px;
+    > * {
+      padding: 0 50px;
+    }
+  }
+}
 
 // Grid columns
 //

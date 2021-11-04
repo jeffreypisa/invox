@@ -1,8 +1,8 @@
 <?php
 	
 // hook into the init action and call create_book_taxonomies when it fires
-add_action( 'init', 'create_project_tax', 0 );
-function create_project_tax() {
+add_action( 'init', 'create_nieuws_tax', 0 );
+function create_nieuws_tax() {
 
 	$labels = array(
 		'name'              => _x( 'Categorie', 'taxonomy general name' ),
@@ -24,20 +24,9 @@ function create_project_tax() {
 		'show_ui'           => true,
 		'show_admin_column' => true,
 		'query_var'         => true,
-		'rewrite' 					=> array('slug' => 'projecten', 'with_front' => false )
+		'rewrite' 					=> array('slug' => 'nieuws', 'with_front' => false )
 	);
 
-  register_taxonomy('project_categorie', array('projecten'), $args);
+  register_taxonomy('nieuws_categorie', array('nieuws'), $args);
 
-}
-
-
-add_action('init', 'register_projecten_tags');
-function register_projecten_tags() {
-    $args = array( 
-        'hierarchical' => true,
-        'label' => 'Tags',
-        'rewrite' 					=> array('slug' => 'projecten-tag', 'with_front' => false )
-    );
-    register_taxonomy( 'projecten_tags', array( 'projecten' ), $args );
 }

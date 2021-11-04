@@ -1,13 +1,32 @@
 .single {
+	.date {
+		position: relative;
+		padding-left:20px;
+		padding-top: 5px;
+		display: block;
+		padding-left: 20px;
+		color: $grey;
+		margin-bottom: 45px;
+		.line {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 40px;
+			width: 4px;
+		}
+	}
 	main {
-		padding-top: 100px;
+		padding-top: 80px;
 	}
 }
 
 @include media-breakpoint-up(lg) {
 	.single {
+		.date {
+			margin-bottom: 60px;
+		}
 		main {
-			padding-top: 140px;
+
 		}
 	}
 }

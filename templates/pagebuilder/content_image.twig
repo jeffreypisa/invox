@@ -1,0 +1,25 @@
+<section id="section{{ sectionno }}" class="mod-content {{ item.achtergrond }}" data-scroll-section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md col-lg-5 d-flex align-items-center offset-lg-1 anime-fadein">
+				<div>
+					{% if item.tagline %}
+						<span class="sub withbar"> {{ item.tagline }}</span>
+					{% endif %}
+					{% if item.titel %}
+						<h2 class="mt-0"> {{ item.titel }}</h2>
+					{% endif %}
+					{{ item.tekst }}
+					{% if item.knop %}
+						<a href="{{ item.knop.url }}" target="{{ item.knop.target }}" class="btn btn-primary mb-3 mb-md-0"> {{ item.knop.title }} </a>
+					{% endif %}
+				</div>
+			</div>
+			<div class="col-md col-lg-5 d-flex align-items-center offset-lg-1 {% if item.layout == 'afbeelding_rechts' %} order-md-last {% endif %} order-first">
+				<div class="ratio-1x1 w-100 mb-30 mb-md-0 anime-reveal">
+					<div class="bg-cover" style="background-image: url({{ Image(item.afbeelding)|resize(1024) }})"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> 

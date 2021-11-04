@@ -1,33 +1,6 @@
-h3, .h3 {
-	&.altfont {
-		font-size: 28px;	
-	}
-}
-
-h2, .h2 {
-	font-size: 24px;
-	&.altfont {
-		font-size: 35px;	
-	}
-}
-
-h1, .h1 {
-	&.altfont {
-		font-size: 35px;	
-	}
-}
-
-@include media-breakpoint-up(md) {
-	h1, .h1 {
-		&.altfont {
-			font-size: 80px;	
-		}
-	}
-	
-	h2, .h2 {
-		font-size: 32px;
-		&.altfont {
-			font-size: 35px;	
-		}
+.sub {
+	&.withbar {
+		padding-left: 10px;
+		border-left: 3px solid #fff;
 	}
 }

@@ -7,11 +7,32 @@
 	{% if item.acf_fc_layout == 'content' %}
 		{% include 'pagebuilder/content.twig' %}
 	
+	{% elseif item.acf_fc_layout == 'content_columns' %}
+		{% include 'pagebuilder/content_columns.twig' %}
+	
+	{% elseif item.acf_fc_layout == 'content_image' %}
+		{% include 'pagebuilder/content_image.twig' %}
+	
 	{% elseif item.acf_fc_layout == 'tegels' %}
 		{% include 'pagebuilder/tegels.twig' %}
 	
+	{% elseif item.acf_fc_layout == 'teamoverview' %}
+		{% include 'pagebuilder/teamoverview.twig' %}
+	
+	{% elseif item.acf_fc_layout == 'teammembers' %}
+		{% include 'pagebuilder/teammembers.twig' %}
+	
+	{% elseif item.acf_fc_layout == 'banner' %}
+		{% include 'pagebuilder/banner.twig' %}
+	
 	{% elseif item.acf_fc_layout == 'video' %}
 		{% include 'pagebuilder/video.twig' %}
+		
+	{% elseif item.acf_fc_layout == 'form' %}
+		{% include 'pagebuilder/form.twig' %}
+		
+	{% elseif item.acf_fc_layout == 'cta' %}
+		{% include 'pagebuilder/cta.twig' %}
 		
 	{% endif %}
   

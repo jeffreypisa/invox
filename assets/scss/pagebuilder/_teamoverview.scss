@@ -1,0 +1,61 @@
+.mod-teamoverview {
+	position: relative;
+	overflow:hidden;
+	.ratio-3x4 {
+		padding-top: 120%;	
+		margin-bottom: 30px;
+	}
+	.images {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: calc(100% - 300px);
+		z-index: 1;
+	}
+	.fill-space {
+		.bg-cover {
+			position: absolute;
+			top: -50px;
+			left: 0;
+			right: 0;
+			bottom: -50px;
+			transition: 4s $ease;
+			z-index: -2;
+		}
+		.bg-actie {
+			position: absolute;
+			top: -50px;
+			left: 0;
+			right: 0;
+			bottom: -50px;
+			z-index: -1;
+			opacity: 0.8;
+		}
+	}
+	.container {
+		position: relative;
+	}
+	.content {
+		z-index: 2;
+		position: relative;
+	}
+}
+
+
+@include media-breakpoint-down(lg) {
+	.mod-teamoverview {
+		min-height: 500px;
+		padding-bottom: 330px;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.mod-teamoverview {
+		min-height: 660px;
+		.images {
+			position: absolute;
+			top: 120px;
+			bottom: auto;
+		}
+	}
+}

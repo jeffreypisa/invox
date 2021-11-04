@@ -1,10 +1,75 @@
 .btn {
-	background: $greendark;
-	font-weight: 700;
+	background: $red;
 	font-size: 18px;
 	line-height: 28px;
 	&:hover, &:focus, &:target {
-		background: $green;
+		background: lighten($red, 15%);
 		color: #fff !important;
+		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+	}
+	&:disabled {
+		background: $grey;
+	}
+}
+
+.btn-link {
+	text-decoration: none;
+	&:after {
+		display: inline-block;
+		font-style: normal;
+		font-variant: normal;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		font-family: "Font Awesome 5"; 
+		font-weight: 700; 
+		content: "\f054";
+		font-size: 11px;
+		transition: 0.2s $ease;
+		margin-left: 8px;
+		transform: translateY(-1px);	
+	}
+	&.prev {
+		&:after {
+			display: none;
+		}
+		&:before {
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			font-family: "Font Awesome 5"; 
+			font-weight: 700; 
+			content: "\f053";
+			font-size: 11px;
+			transition: 0.2s $ease;
+			margin-right: 8px;
+			transform: translateY(-1px) translateX(0px);	
+		}
+	}
+	&:hover {
+		text-decoration: none;
+	}
+	&:not(:hover) {
+		&:after {
+			color: $dark;
+			margin-left: 2px;
+		}
+		&:before {
+			color: $dark;
+			transform: translateY(-1px)  translateX(3px);	
+		}
+	}
+}
+
+.text-white {
+	.btn-link {
+		color: #fff;
+		&:after {
+			color: #fff;
+		}
+		&:hover {
+			color: #fff !important;
+		}
 	}
 }

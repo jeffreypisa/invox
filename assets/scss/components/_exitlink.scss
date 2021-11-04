@@ -1,0 +1,10 @@
+body {
+	transition: opacity 1s $ease;
+	opacity: 0;
+	&.loaded {
+		opacity: 1;
+		&.disappear {
+			opacity: 0 !important;
+		}
+	}
+}

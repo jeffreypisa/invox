@@ -1,17 +1,20 @@
-<section class="mod-bannerslider text-white" data-scroll-section>
+<section class="mod-bannerslider bg-dark text-white" data-scroll-section>
 	<div class="bannerslider" data-rellax-speed="1">
 		<div class="js-slick-bannerslider">
 			{% for item in post.get_field('slider') %}
 				<div class="item d-flex align-items-center">		
 					<div class="fill-space" data-scroll data-scroll-speed="-3">
+						<div class="bg-gradient"></div>
 						<div class="bg-cover" style="background-image: url({{ Image(item.afbeelding)|resize(1920) }})">
 						</div>
 					</div>
-					
 					<div class="container" data-scroll data-scroll-speed="-1">
 						<div class="row">
-							<div class="col-10 offset-1 offset-lg-2 col-lg-8 text-center">
-								<h2 class="h1 ml10 altfont weight-400 mb-2">
+							<div class="col-md-10 col-lg-9 col-xl-6">
+								{% if item.tagline %}
+									<span class="sub"> {{ item.tagline }} </span>
+								{% endif %}
+								<h2 class="h1 mt-0 ml10 altfont weight-400 mb-2">
 									<div class="line">
 										<span class="text-wrapper">
 											<span class="letters">  {{ item.titel }} 
@@ -19,19 +22,12 @@
 										</span>
 									</div>
 								</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-10 offset-1 offset-lg-2 col-lg-8 text-center">
 								{% if item.titel %}
-									<p class="lead mb-4 d-none d-md-block"> {{ item.tekst }} </p>
+									<p class="lead mb-4"> {{ item.tekst }} </p>
 								{% endif %}
 								<div class="d-md-none">
 									<br>
 								</div>
-								{% if item.link %}
-									<a href="{{ item.link.url }}" target="{{ item.link.target }}" class="btn btn-primary"> {{ item.link.title }} </a>
-								{% endif %}
 							</div>
 						</div>
 					</div>
@@ -39,4 +35,31 @@
 			{% endfor %}
 		</div>
 	</div>
+	{% if post.get_field('slider')|length > 1 %}
+		<div class="bannerslider-nav anime-fadein">
+			<div class="container">
+				<div class="selector d-none d-lg-block"></div>
+				<div class="row">
+					{% for item in post.get_field('slider') %}
+						<div class="col-lg">
+							<div id="bannerslider_nav_{{ loop.index0 }}" class="item text-dark">
+								{% if item.link %}
+									<a href="{{ item.link.url }}" target="{{ item.link.target }}" class="action">
+										<span class="text">{{ item.link.title }} <i class="fas fa-chevron-right"></i></span>
+										<span class="bg"></span>
+									</a>
+								{% endif %}
+								<div class="item-header">
+									0{{ loop.index }} / {{ item.nav_titel }}
+								</div>
+								<div class="item-body d-none d-lg-block" data-mh>
+									{{ item.nav_description}}
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	{% endif %}
 </section> 

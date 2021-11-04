@@ -1,0 +1,49 @@
+.mod-teammembers {
+	position: relative;
+	overflow: visible;
+	.btn {
+		margin: -50px 0 0 30px;
+		z-index: 1;
+		position: relative;
+	}
+	.fill-space {
+		.bg-cover {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			transition: 4s $ease;
+			z-index: -2;
+		}
+		.content {
+			position: absolute;
+			bottom: 30px;
+			left: 30px;
+			right: 30px;
+			z-index: 1;
+			color: #fff;
+			h4 {
+				color: #fff;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.mod-teammembers {
+		.maincontent {
+			padding-top: 60px;
+			margin-right: -100px;
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.mod-teammembers {
+		.maincontent {
+			padding-top: 40px;
+			margin-right: -120px;
+		}
+	}
+}

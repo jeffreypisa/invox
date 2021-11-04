@@ -12,14 +12,6 @@
 $context         = Timber::context();
 $timber_post     = Timber::get_post();
 $context['post'] = $timber_post;
-
-$args_vacatures = array(
-    'post_type'			  => 'vacatures',
-    'posts_per_page'  => -1,
-    'post__not_in' => array( get_the_ID() )
-);
-    
-$context['vacatures'] = Timber::get_posts($args_vacatures);
     
 if ( post_password_required( $timber_post->ID ) ) {
 	Timber::render( 'single-password.twig', $context );

@@ -1,24 +1,28 @@
 $enable-gradients: true;
 
 // Color system
-$dark: #414141;
-$greylight: #F5F5F5;
-$greenlight: #009B3A;
-$greendark: #00693C;
+$greylight: #F3F3F3;
+$greymedium: #CDCDCD;
+$bluedark: $green;
+$red: $blue;
+$dark: #000000;
+$grey: #8298AB;
 
 // Create your own map
 $custom-colors: (
-  "primary":        $greendark,
-  "secondary":      $greenlight,
+  "primary":        $red,
+  "secondary":      $bluedark,
   "success":        $success,
   "info":           $info,
   "warning":        $warning,
   "danger":         $danger,
   "light":          $light,
-  "dark":           $dark,
+  "greymedium":     $greymedium,
   "greylight":      $greylight,
-  "greenlight":     $greenlight,
-  "greendark":      $greendark
+  "grey":           $grey,
+  "dark":           $dark,
+  "bluedark":       $bluedark,
+  "red":            $red
 );
 
 // Merge the maps
@@ -45,9 +49,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 // This gradient is also added to elements with `.bg-gradient`
 // scss-docs-start variable-gradient
 
-
-
-$gradient: linear-gradient(180deg, $greenlight 0%, $greendark 74.48%);
-$gradient-hover: linear-gradient(180deg, $greenlight 0%, $greendark 74.48%);
+$gradient: linear-gradient(180deg, rgba($red, 0) 0%, rgba($red, 0.4) 100%);
+$gradient-hover: linear-gradient(180deg, rgba($red, 0) 0%, rgba($red, 0.4) 100%);
 
 // scss-docs-end variable-gradient

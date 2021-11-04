@@ -9,14 +9,6 @@
   ],
   "creatorBuild" : "34214",
   "files" : {
-    "\/.nova\/Configuration.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/.nova\/Configuration-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
     "\/.nova\/Publishing\/Emonks.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -49,18 +41,18 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/acf-json\/group_612e38b0c6fd2.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/acf-json\/group_612e38b0c6fd2-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
     "\/acf-json\/group_6130c65588186.json" : {
       "ft" : 524288,
       "oA" : 1,
       "oAP" : "\/acf-json\/group_6130c65588186-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/acf-json\/group_61813671d04b0.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/group_61813671d04b0-min.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
@@ -93,31 +85,11 @@
       "oAP" : "\/assets\/css\/main.css.map",
       "oF" : 0
     },
-    "\/assets\/img\/brush-greylight.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/img\/brush-greylight.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/img\/brush-white.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/img\/brush-white.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/img\/chevron_green_left.png" : {
+    "\/assets\/favicon\/android-chrome-192x192.png" : {
       "ft" : 32768,
-      "iS" : 3195,
+      "iS" : 20501,
       "oA" : 0,
-      "oAP" : "\/assets\/img\/chevron_green_left.png",
+      "oAP" : "\/assets\/favicon\/android-chrome-192x192.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -126,11 +98,22 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/img\/chevron_green_right.png" : {
-      "ft" : 32768,
-      "iS" : 3313,
+    "\/assets\/favicon\/android-chrome-192x192.png.webp" : {
+      "ft" : 8388608,
+      "iS" : 10812,
       "oA" : 0,
-      "oAP" : "\/assets\/img\/chevron_green_right.png",
+      "oAP" : "\/assets\/favicon\/android-chrome-192x192.png.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/assets\/favicon\/android-chrome-512x512.png" : {
+      "ft" : 32768,
+      "iS" : 65255,
+      "oA" : 0,
+      "oAP" : "\/assets\/favicon\/android-chrome-512x512.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -139,11 +122,22 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/img\/chevron_left.png" : {
-      "ft" : 32768,
-      "iS" : 2904,
+    "\/assets\/favicon\/android-chrome-512x512.png.webp" : {
+      "ft" : 8388608,
+      "iS" : 31144,
       "oA" : 0,
-      "oAP" : "\/assets\/img\/chevron_left.png",
+      "oAP" : "\/assets\/favicon\/android-chrome-512x512.png.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/assets\/favicon\/apple-touch-icon.png" : {
+      "ft" : 32768,
+      "iS" : 19067,
+      "oA" : 0,
+      "oAP" : "\/assets\/favicon\/apple-touch-icon.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -152,11 +146,22 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/img\/chevron_right.png" : {
-      "ft" : 32768,
-      "iS" : 2783,
+    "\/assets\/favicon\/apple-touch-icon.png.webp" : {
+      "ft" : 8388608,
+      "iS" : 9948,
       "oA" : 0,
-      "oAP" : "\/assets\/img\/chevron_right.png",
+      "oAP" : "\/assets\/favicon\/apple-touch-icon.png.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/assets\/favicon\/favicon-16x16.png" : {
+      "ft" : 32768,
+      "iS" : 2940,
+      "oA" : 0,
+      "oAP" : "\/assets\/favicon\/favicon-16x16.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -165,11 +170,22 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/img\/footer.png" : {
-      "ft" : 32768,
-      "iS" : 101943,
+    "\/assets\/favicon\/favicon-16x16.png.webp" : {
+      "ft" : 8388608,
+      "iS" : 374,
       "oA" : 0,
-      "oAP" : "\/assets\/img\/footer.png",
+      "oAP" : "\/assets\/favicon\/favicon-16x16.png.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/assets\/favicon\/favicon-32x32.png" : {
+      "ft" : 32768,
+      "iS" : 3674,
+      "oA" : 0,
+      "oAP" : "\/assets\/favicon\/favicon-32x32.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -178,71 +194,30 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/img\/headerlogos.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/img\/headerlogos.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/img\/play.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/img\/play.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/img\/plus.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/img\/plus.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/img\/shape-green.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/img\/shape-green.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/img\/shape-greylight.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/img\/shape-greylight.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/img\/shape.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/img\/shape.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/img\/sthendrick_logo_full.png" : {
-      "ft" : 32768,
-      "iS" : 14894,
+    "\/assets\/favicon\/favicon-32x32.png.webp" : {
+      "ft" : 8388608,
+      "iS" : 760,
       "oA" : 0,
-      "oAP" : "\/assets\/img\/sthendrick_logo_full.png",
+      "oAP" : "\/assets\/favicon\/favicon-32x32.png.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/assets\/favicon\/favicon.ico" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/favicon\/favicon.ico",
+      "oF" : 0
+    },
+    "\/assets\/favicon\/mstile-150x150.png" : {
+      "ft" : 32768,
+      "iS" : 12904,
+      "oA" : 0,
+      "oAP" : "\/assets\/favicon\/mstile-150x150.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -251,21 +226,277 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/img\/sthendrick_logo_full.svg" : {
+    "\/assets\/favicon\/mstile-150x150.png.webp" : {
+      "ft" : 8388608,
+      "iS" : 6646,
+      "oA" : 0,
+      "oAP" : "\/assets\/favicon\/mstile-150x150.png.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/assets\/favicon\/safari-pinned-tab.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/assets\/img\/sthendrick_logo_full.svg",
+      "oAP" : "\/assets\/favicon\/safari-pinned-tab.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/assets\/img\/sthendrick_logo.svg" : {
+    "\/assets\/fonts\/fa-brands-400.eot" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/fa-brands-400.eot",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/fa-brands-400.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/assets\/img\/sthendrick_logo.svg",
+      "oAP" : "\/assets\/fonts\/fa-brands-400.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/fonts\/fa-brands-400.ttf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/fa-brands-400.ttf",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/fa-brands-400.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/fa-brands-400.woff",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/fa-brands-400.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/fa-brands-400.woff2",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/fa-light-300.eot" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/fa-light-300.eot",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/fa-light-300.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/fonts\/fa-light-300.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/fonts\/fa-light-300.ttf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/fa-light-300.ttf",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/fa-light-300.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/fa-light-300.woff",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/fa-light-300.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/fa-light-300.woff2",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/fa-solid-900.eot" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/fa-solid-900.eot",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/fa-solid-900.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/fonts\/fa-solid-900.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/fonts\/fa-solid-900.ttf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/fa-solid-900.ttf",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/fa-solid-900.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/fa-solid-900.woff",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/fa-solid-900.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/fa-solid-900.woff2",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/fontawesome.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/fonts\/fontawesome.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/fonts\/light.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/light.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/fonts\/Montserrat-Medium.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/Montserrat-Medium.woff",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/Montserrat-Medium.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/Montserrat-Medium.woff2",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/Montserrat-SemiBold.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/Montserrat-SemiBold.woff",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/Montserrat-SemiBold.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/Montserrat-SemiBold.woff2",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/Roboto-Bold.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/Roboto-Bold.woff",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/Roboto-Bold.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/Roboto-Bold.woff2",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/Roboto-Regular.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/Roboto-Regular.woff",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/Roboto-Regular.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/Roboto-Regular.woff2",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/solid.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/fonts\/solid.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/img\/invox_color.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/invox_color.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/invox_white.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/invox_white.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -319,6 +550,17 @@
       "mi" : 1,
       "oA" : 1,
       "oAP" : "\/assets\/js\/scripts\/bgcolorchange-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/scripts\/bgmove.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/js\/scripts\/bgmove-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -437,21 +679,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/assets\/scss\/components\/_bgcolorchange.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 1,
-      "oA" : 1,
-      "oAP" : "\/assets\/scss\/components\/_bgcolorchange.css",
-      "oF" : 0,
-      "oS" : 3,
-      "pg" : 0,
-      "sct" : 0
-    },
     "\/assets\/scss\/components\/_btn-menu.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -477,6 +704,21 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/assets\/scss\/components\/_buttons.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/scss\/components\/_categories.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/components\/_categories.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
@@ -537,6 +779,21 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/assets\/scss\/components\/_embed.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/scss\/components\/_exitlink.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/components\/_exitlink.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
@@ -677,6 +934,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/assets\/scss\/components\/_tease.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/components\/_tease.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/assets\/scss\/components\/_type.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -747,6 +1019,66 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/assets\/scss\/pagebuilder\/_content.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/scss\/pagebuilder\/_cta.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/pagebuilder\/_cta.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/scss\/pagebuilder\/_form.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/pagebuilder\/_form.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/scss\/pagebuilder\/_teammembers.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/pagebuilder\/_teammembers.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/scss\/pagebuilder\/_teamoverview.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/pagebuilder\/_teamoverview.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
@@ -1064,6 +1396,14 @@
       "oAP" : "\/lib\/ctax.php",
       "oF" : 0
     },
+    "\/lib\/filters.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/lib\/filters.php",
+      "oF" : 0
+    },
     "\/lib\/gutenberg.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1110,6 +1450,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/lib\/videoembed.php",
+      "oF" : 0
+    },
+    "\/lib\/widgets.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/lib\/widgets.php",
       "oF" : 0
     },
     "\/lib\/wpadmin.php" : {
@@ -1847,6 +2195,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/page-nieuws.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-nieuws.php",
+      "oF" : 0
+    },
     "\/page.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1885,6 +2241,17 @@
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/screenshot.png.webp" : {
+      "ft" : 8388608,
+      "iS" : 4314,
+      "oA" : 0,
+      "oAP" : "\/screenshot.png.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/search.php" : {
@@ -2081,12 +2448,68 @@
       "oAP" : "\/templates\/pagebuilder.twig",
       "oF" : 0
     },
+    "\/templates\/pagebuilder\/banner.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pagebuilder\/banner.twig",
+      "oF" : 0
+    },
+    "\/templates\/pagebuilder\/content_columns.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pagebuilder\/content_columns.twig",
+      "oF" : 0
+    },
+    "\/templates\/pagebuilder\/content_image.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pagebuilder\/content_image.twig",
+      "oF" : 0
+    },
     "\/templates\/pagebuilder\/content.twig" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/pagebuilder\/content.twig",
+      "oF" : 0
+    },
+    "\/templates\/pagebuilder\/cta.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pagebuilder\/cta.twig",
+      "oF" : 0
+    },
+    "\/templates\/pagebuilder\/form.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pagebuilder\/form.twig",
+      "oF" : 0
+    },
+    "\/templates\/pagebuilder\/teammembers.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pagebuilder\/teammembers.twig",
+      "oF" : 0
+    },
+    "\/templates\/pagebuilder\/teamoverview.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pagebuilder\/teamoverview.twig",
       "oF" : 0
     },
     "\/templates\/pagebuilder\/tegels.twig" : {
@@ -2103,14 +2526,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/pagebuilder\/video.twig",
-      "oF" : 0
-    },
-    "\/templates\/partial\/banner.twig" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/templates\/partial\/banner.twig",
       "oF" : 0
     },
     "\/templates\/partial\/bannerslider.twig" : {
@@ -2161,20 +2576,20 @@
       "oAP" : "\/templates\/single-password.twig",
       "oF" : 0
     },
+    "\/templates\/single-team.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/single-team.twig",
+      "oF" : 0
+    },
     "\/templates\/single.twig" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/single.twig",
-      "oF" : 0
-    },
-    "\/templates\/tease-post.twig" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/templates\/tease-post.twig",
       "oF" : 0
     },
     "\/templates\/tease.twig" : {

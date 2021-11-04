@@ -1,23 +1,16 @@
 section {
-	padding: 40px 0;
+	padding: 50px 0;
 }
 
 section.bg-transparent + section.bg-transparent,
 section.bg-white + section.bg-white,
 section.bg-greylight + section.bg-greylight {
 	padding-top: 0 !important;
-	margin-top: -40px;
 }
-
 
 @include media-breakpoint-up(md) {
 	section {
-		padding: 70px 0;
-	}
-	section.bg-transparent + section.bg-transparent,
-	section.bg-white + section.bg-white,
-	section.bg-greylight + section.bg-greylight {
-		margin-top: -70px;
+		padding: 75px 0;
 	}
 }
 
@@ -25,31 +18,16 @@ section.bg-greylight + section.bg-greylight {
 	section {
 		padding: 90px 0;
 	}
-	section.bg-transparent + section.bg-transparent,
-	section.bg-white + section.bg-white,
-	section.bg-greylight + section.bg-greylight {
-		margin-top: -90px;
-	}
 }
 
 @include media-breakpoint-up(xl) {
 	section {
 		padding: 100px 0;
 	}
-	section.bg-transparent + section.bg-transparent,
-	section.bg-white + section.bg-white,
-	section.bg-greylight + section.bg-greylight {
-		margin-top: -100px;
-	}
 }
 
 @include media-breakpoint-up(xxl) {
 	section {
 		padding: 110px 0;
-	}
-	section.bg-transparent + section.bg-transparent,
-	section.bg-white + section.bg-white,
-	section.bg-greylight + section.bg-greylight {
-		margin-top: -110px;
 	}
 }

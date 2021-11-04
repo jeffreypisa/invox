@@ -14,13 +14,99 @@
     <link rel="profile" href="http://gmpg.org/xfn/11">
     
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ theme.link }}/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ theme.link }}/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ theme.link }}/assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="{{ theme.link }}/assets/favicon/site.webmanifest">
-    <link rel="mask-icon" href="{{ theme.link }}/assets/favicon/safari-pinned-tab.svg" color="#00693c">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ options.apple_touch_icon.url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ options.favicon_32x32.url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ options.favicon_16x16.url }}">
+    <link rel="mask-icon" href="{{ options.safari_pinned_tab.url }}" color="{{ options.kleur_basis }}">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     
     {{function('wp_head')}}
+    
+    {% set kleur_basis = options.kleur_basis %}
+    {% set kleur_actie = options.kleur_actie %}
+    
+    <style>
+        .bg-basis {
+            background: {{ kleur_basis }};
+        }
+        
+        .bg-actie,
+        .mod-bannerslider .bannerslider-nav .item a .bg,
+        .opensidemenu .btn-menu,
+        body .nf-form-content button,
+        body .nf-form-content button:hover, 
+        body .nf-form-content input[type=button],
+        body .nf-form-content input[type=button]:hover,
+        body .nf-form-content input[type=submit],
+        body .nf-form-content input[type=submit]:hover {
+            background: {{ kleur_actie }};
+        }
+        
+        .dropdown a:hover+.dropdown-menu .nav-item a:hover, 
+        .dropdown .dropdown-menu:hover .nav-item a:hover,
+        .mod-mobilemenu ul li a:hover, .mod-mobilemenu ul li a:focus,
+        .mod-bannerslider .selector,
+        .text-white a:not(.immune):hover,
+        .mod-bannerslider .bannerslider .slick-slide .item .sub,
+        .mod-banner.text-white .sub,
+        .mod-bannerslider .bannerslider-nav .item.active,
+        .sub.withbar,
+        .nf-form-content .list-select-wrap .nf-field-element>div:focus, 
+        .nf-form-content input:not([type=button]):focus, 
+        .nf-form-content textarea:focus {
+            border-color: {{ kleur_actie }};
+        }
+        
+        .mod-bannerslider .bannerslider-nav .item.active .item-header, 
+        .tease-post:hover h3, 
+        .text-white a:not(.immune):hover,
+        .mod-categories a.active h5,
+        .mod-categories a:hover h5,
+        header ul li.current-page-ancestor a,
+        header ul li.current-page-ancestor a:hover,
+        header ul li.current_page_item a,
+        header ul li.current_page_item a:hover,
+        header .dropdown a:hover+.dropdown-menu .nav-item a:hover, 
+        header .dropdown .dropdown-menu:hover .nav-item a:hover,
+        header .dropdown .dropdown-menu .nav-item.current-menu-item a, 
+        header .dropdown .dropdown-menu .nav-item.current-menu-item a:hover, 
+        header.text-white ul li.current-page-ancestor a,
+        header.text-white ul li.current-page-ancestor a:hover,
+        header.text-white ul li.current_page_item a,
+        header.text-white ul li.current_page_item a:hover,
+        header.nav-up ul li a:hover, 
+        header.nav-down ul li a:hover,
+        header.text-white ul li.current_page_item a,
+        header.text-white.nav-up ul li a:hover, 
+        header.text-white.nav-down ul li a:hover {
+            color: {{ kleur_actie }};
+        }
+        
+        .btn-primary {
+            background: {{ kleur_actie }};  
+            color: #fff;
+        }
+        
+        .btn-primary:hover {
+            background: {{ kleur_actie }};
+            color: #fff;
+        }
+        
+        .btn-secondary {
+            background: {{ kleur_basis }};
+            color: #fff;
+        }
+        
+        .bg-gradient {
+            background: linear-gradient(180deg, rgba({{ kleur_actie|hex2rgb }}, 0) 0%, rgba({{ kleur_actie|hex2rgb }}, 0.4) 100%) !important;
+        }
+        
+        a:not(.btn),
+        a:not(.btn):hover,
+        .btn-link,
+        .btn-link:hover {
+            color: {{ kleur_actie }}
+        }
+    </style>
 </head>

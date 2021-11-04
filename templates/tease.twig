@@ -1,9 +1,13 @@
-<article class="tease tease-{{post.post_type}}" id="tease-{{post.ID}}">
-	{% block content %}
-		<h2 class="h2"><a href="{{post.link}}">{{post.title}}</a></h2>
-		<p>{{post.preview}}</p>
-		{% if post.get_thumbnail %}
-			<img src="{{post.thumbnail.src}}" />
-		{% endif %}
-	{% endblock %}
-</article>
+<a href="{{ item.link }}" class="tease-post tegel{{ loop.index }}">
+	<div class="d-inline-block mb-1" style="width: 100%;">
+		<div class="image-holder image ratio-1x1 w-100">
+			<div class="fill-space bg-cover" style="background-image: url({{ Image(item.thumbnail)|resize(1024) }})"></div>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="line bg-actie"></div>
+		<muted><small> {{ item.date }}  </small></muted>
+		<h3 class="titel h5"> {{ item.title }}</h3>
+	</div>
+</a>

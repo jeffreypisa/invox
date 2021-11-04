@@ -1,0 +1,23 @@
+<section id="section{{ sectionno }}" class="mod-content {{ item.achtergrond }}" data-scroll-section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md col-lg-5 offset-lg-1 anime-fadein">
+				{% if item.titel %}
+					<h2 style="margin-top: -4px"> {{ item.titel }}</h2>
+				{% endif %}
+				{% if item.link %}
+					<a href="{{ item.link.url }}" target="{{ item.link.target }}" class="btn-link d-inline-block mb-3"> {{ item.link.title }} </a>
+				{% endif %}
+			</div>
+			<div class="col-md col-lg-5">
+				<div class="row">
+					{% for item in item.kolom %}
+						<div class="col-lg">
+							{{ item.tekst }}
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section> 

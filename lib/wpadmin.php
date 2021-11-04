@@ -1,5 +1,6 @@
 <?php
 
+// hide comments
 function post_remove ()      //creating functions post_remove for removing menu item
 { 
    remove_menu_page('edit.php');
@@ -7,8 +8,6 @@ function post_remove ()      //creating functions post_remove for removing menu 
 
 add_action('admin_menu', 'post_remove');   //adding action for triggering function call
 
-
-// hide comments
 
 // Removes from admin menu
 add_action( 'admin_menu', 'my_remove_admin_menus' );

@@ -1,3 +1,6 @@
+body .nf-form-content {
+	padding: 0;
+}
 body .nf-form-content button, 
 body .nf-form-content input[type=button], 
 body .nf-form-content input[type=submit] {
@@ -10,4 +13,26 @@ body .nf-form-content .list-select-wrap .nf-field-element>div,
 body .nf-form-content input:not([type=button]), 
 body .nf-form-content textarea {
 	background: #fff;
+}
+
+
+body .nf-form-content .list-select-wrap .nf-field-element>div, 
+body .nf-form-content input:not([type=button]), 
+body .nf-form-content textarea {
+	border-radius: 4px;
+	border-color: $greymedium;
+	&::placeholder {
+		font-size: 14px;
+		color: $greymedium;
+	}
+}
+
+.checkbox-wrap .nf-field-element label, 
+.checkbox-wrap .nf-field-label label, 
+.listcheckbox-wrap .nf-field-element label, 
+.listcheckbox-wrap .nf-field-label label,
+.nf-form-content .nf-after-field,
+.nf-after-form-content {
+	font-weight: 400;
+	font-size: 14px;
 }

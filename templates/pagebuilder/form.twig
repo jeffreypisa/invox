@@ -1,0 +1,14 @@
+<section id="section{{ sectionno }}" class="mod-form {{ item.achtergrond }}" data-scroll-section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 anime-fadein">
+				{% if item.titel %}
+					<h2 class="h1 mb-3"> {{ item.titel }}</h2>
+				{% endif %}
+				{{ item.tekst }}
+				<br>
+				{{ item.formulier_shortcode }}
+			</div>
+		</div>
+	</div>
+</section> 

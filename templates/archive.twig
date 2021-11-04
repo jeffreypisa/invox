@@ -1,9 +1,36 @@
-{# This file demonstrates using most of the index.twig template and modifying 
-   just a small part. See `search.twig` for an example of another approach #}
-
-{% extends "index.twig" %}
+{% extends "base.twig" %}
 
 {% block content %}
-  <h3>This is my archive</h3>
-  {{ parent() }}
+	<section class="mod-archive" data-scroll-section>
+		<div class="container">
+			<br><br>
+			<h1> Nieuws </h1>
+			<br>
+			{% if categories %}
+				<div class="mod-categories">
+					<div class="row">
+						<div class="col-auto">
+							<a href="{{ site.link }}/news" class="cat {% if current_category == '' %} active {% endif %}"> <h5> All </h5></a>
+						</div>
+						{% for item in categories %}
+							<div class="col-auto">		
+								<a href="{{ item.link }}" class="category {% if item.id == current_category %} active {% endif %}">
+									<h5> {{ item.title }} </h5>
+								</a>		
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			{% endif %}
+			<br><br>
+			<div class="row">
+				{% for item in posts %}
+					<div class="col-md-4">
+						{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+						<br><br>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
 {% endblock %}

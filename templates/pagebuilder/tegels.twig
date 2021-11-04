@@ -1,23 +1,46 @@
 <section class="mod-tegels {{ item.achtergrond }}" data-scroll-section>
-	<div class="container anime-fadein {% if item.centreren %} text-center {% endif %}">
-		{% if item.titel %}
-			<h2> {{ item.titel }}</h2>
-		{% endif %}
-		<div class="row g-2 g-md-3 g-lg-4 g-xl-5 row-flex">
-			{% for item in item.tegels %}
-				<div class="col-6 col-md-4">
-					<div class="tegel">
-						<div class="d-inline-block mb-1" style="width: 100%; max-width: 400px">
-							<div class="image-holder image ratio-4x3">
-								<div class="fill-space bg-cover" style="background-image: url({{ Image(item.afbeelding)|resize(1024) }})"></div>
-							</div>
-						</div>
-						<h2 class="titel altfont weight-400 mb-0 mb-md-2"> {{ item.titel }} </h2>
-						<div class="d-none d-md-block">{{ item.tekst }}</div>
+	<div class="container anime-fadein">
+		<div class="row text-center">
+			<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+				{% if item.titel %}
+					<h2> {{ item.titel }}</h2>
+				{% endif %}
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-md-10 offset-md-1 col-lg-4 offset-lg-4">
+				{% if item.tekst %}
+					<p class="mb-5 mb-lg-0"> {{ item.tekst }}</p>
+				{% endif %}
+			</div>
+		</div>
+		<div class="row g-10 row-flex">
+			{% if item.toon == 'newsrecent' %}
+				{% for item in newsrecent %}
+					<div class="col-sm-6 col-md-4">
+						{% include 'tease.twig' %}
+						<br>
 					</div>
-					<br>
-				</div>
-			{% endfor %}
+				{% endfor %}
+			{% else %}
+				{% for item in item.tegels %}
+					<div class="col-sm-6 col-md-4">
+						<a href="{{ item.link }}" class="tease-post tegel{{ loop.index }}">
+							<div class="d-inline-block mb-1" style="width: 100%;">
+								<div class="image-holder image ratio-1x1 anime-reveal">
+									<div class="fill-space bg-cover" style="background-image: url({{ Image(item.afbeelding)|resize(1024) }})"></div>
+								</div>
+							</div>
+							<div class="content">
+								<div class="line bg-actie"></div>
+								<muted><small> bericht </small></muted>
+								<h3 class="titel h5 mb-0"> {{ item.titel }}</h3>
+							</div>
+						</a>
+						<br>
+					</div>
+				{% endfor %}
+			{% endif %}
 		</div>
 		<br>
 	</div>

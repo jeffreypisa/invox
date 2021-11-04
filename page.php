@@ -26,12 +26,11 @@ $context = Timber::context();
 $timber_post     = new Timber\Post();
 $context['post'] = $timber_post;
 
-
-$args_vacatures = array(
-    'post_type'			  => 'vacatures',
-    'posts_per_page'  => -1
+$args_newsrecent = array(
+    'post_type'			  => 'nieuws',
+    'posts_per_page'  => 3
 );
     
-$context['vacatures'] = Timber::get_posts($args_vacatures);
+$context['newsrecent'] = Timber::get_posts($args_newsrecent);
         
 Timber::render( array( 'page-' . $timber_post->post_name . '.twig', 'page.twig' ), $context );

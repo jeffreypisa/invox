@@ -7,7 +7,7 @@
 				<ul class="dropdown-menu">
 					{% for item in item.children %}
 						<li class="nav-item {{ item.classes | join(' ') }}">
-							<a class="dropdown-item btn-sm" target="{{ item.target }}" href="{{ item.link }}">{{ item.title }}</a>
+							<a class="dropdown-item immune" target="{{ item.target }}" href="{{ item.link }}">{{ item.title }}</a>
 							{% if item.children %}
 								{% include "menu.twig" with {'items': item.children} %}
 							{% endif %}

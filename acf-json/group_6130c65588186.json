@@ -1,6 +1,6 @@
 {
     "key": "group_6130c65588186",
-    "title": "Banner slider",
+    "title": "Home slider",
     "fields": [
         {
             "key": "field_6130c6631a6d0",
@@ -17,8 +17,8 @@
             },
             "collapsed": "",
             "min": 0,
-            "max": 0,
-            "layout": "table",
+            "max": 3,
+            "layout": "block",
             "button_label": "Nieuwe slide",
             "sub_fields": [
                 {
@@ -44,6 +44,25 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": ""
+                },
+                {
+                    "key": "field_61793e26ee688",
+                    "label": "Tagline",
+                    "name": "tagline",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 },
                 {
                     "key": "field_6130c6558a36b",
@@ -97,6 +116,44 @@
                         "id": ""
                     },
                     "return_format": "array"
+                },
+                {
+                    "key": "field_6176a80e0a56f",
+                    "label": "Nav titel",
+                    "name": "nav_titel",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6176a81e0a570",
+                    "label": "Nav beschrijving",
+                    "name": "nav_description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
                 }
             ]
         }
@@ -104,9 +161,9 @@
     "location": [
         [
             {
-                "param": "page_type",
+                "param": "page",
                 "operator": "==",
-                "value": "front_page"
+                "value": "10"
             }
         ]
     ],
@@ -120,5 +177,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1630587054
+    "modified": 1635350423
 }

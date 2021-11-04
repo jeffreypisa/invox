@@ -7,6 +7,11 @@ Theme by Emonks
 @import "../node_modules/slick-carousel/slick/slick"; 
 @import '../../node_modules/lity/dist/lity.css';
 
+// FontAwesome
+// @import '../fonts/brands';
+@import '../fonts/solid';
+@import '../fonts/fontawesome';
+
 // Configuration
 @import "../node_modules/bootstrap/scss/functions"; // Required
 @import "../node_modules/bootstrap/scss/variables"; // Required
@@ -19,13 +24,13 @@ Theme by Emonks
 @import 'settings/colors';
 @import 'settings/components';
 @import 'settings/body';
-@import 'settings/buttons';
 @import 'settings/grid';
 @import 'settings/links';
 @import 'settings/type';
 @import 'settings/effects';
 @import 'settings/nav';
 @import 'settings/form';
+@import 'settings/buttons';
 
 // Configuration
 @import "../node_modules/bootstrap/scss/root"; // Required
@@ -68,7 +73,7 @@ Theme by Emonks
 @import "../node_modules/bootstrap/scss/utilities/api";
 
 // Components
-@import 'components/bgcolorchange';
+@import 'components/exitlink';
 @import 'components/image';
 @import 'components/helpers';
 @import 'components/embed';
@@ -78,6 +83,7 @@ Theme by Emonks
 @import 'components/buttons';
 @import 'components/header';
 @import 'components/form';
+@import 'components/tease';
 @import 'components/footer';
 @import 'components/section';
 @import 'components/dropdown';
@@ -86,6 +92,7 @@ Theme by Emonks
 @import 'components/mobilemenu';
 @import 'components/content';
 @import 'components/bannertext';
+@import 'components/categories';
 
 // Plugins
 @import 'plugins/slick';
@@ -95,5 +102,9 @@ Theme by Emonks
 @import 'pagebuilder/banner';
 @import 'pagebuilder/bannerslider';
 @import 'pagebuilder/content';
+@import 'pagebuilder/form';
 @import 'pagebuilder/video';
 @import 'pagebuilder/tegels';
+@import 'pagebuilder/teamoverview';
+@import 'pagebuilder/cta';
+@import 'pagebuilder/teammembers';

@@ -1,0 +1,21 @@
+.mod-form {
+	&:first-child {
+		padding-top: 100px;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.mod-form {
+		&:first-child {
+			padding-top: 160px;
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.mod-form {
+		&:first-child {
+			padding-top: 180px;
+		}
+	}
+}

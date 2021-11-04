@@ -86,6 +86,12 @@ class StarterSite extends Timber\Site {
 		$context['notes'] = 'These values are available everytime you call Timber::context();';
 		$context['menu']  = new Timber\Menu('menu');
 		$context['footermenu']  = new Timber\Menu('footermenu');
+		
+		$context['footer_1'] = Timber::get_widgets('footer_1');
+		$context['footer_2'] = Timber::get_widgets('footer_2');
+		$context['footer_3'] = Timber::get_widgets('footer_3');
+		$context['footer_4'] = Timber::get_widgets('footer_4');
+		
 		$context['site']  = $this;
 		return $context;
 	}
@@ -162,7 +168,6 @@ class StarterSite extends Timber\Site {
 		$twig->addFilter( new Twig\TwigFilter( 'myfoo', array( $this, 'myfoo' ) ) );
 		return $twig;
 	}
-
 }
 
 new StarterSite();

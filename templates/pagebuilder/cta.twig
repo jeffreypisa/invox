@@ -1,0 +1,17 @@
+<section id="section{{ sectionno }}" class="mod-cta {{ item.achtergrond }}" data-scroll-section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
+				{% if item.tagline %}
+					<span class="sub"> {{ item.tagline }}</span>
+				{% endif %}
+				{% if item.titel %}
+					<h2> {{ item.titel }}</h2>
+				{% endif %}
+				{% if item.knop %}
+					<a href="{{ item.knop.url }}" target="{{ item.knop.target }}" class="btn btn-primary anime-fadein"> {{ item.knop.title }} </a>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</section> 

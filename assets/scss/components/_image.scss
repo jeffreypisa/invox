@@ -7,6 +7,7 @@
 .image-holder {
 	position: relative;
 	margin: 0 auto 10px; 
+	overflow: hidden;
 	&.image {
 		width: 100%;
 		.fill-space {
@@ -15,7 +16,6 @@
 	}
 	&.rounded {
 		border-radius: 300px !important;
-		overflow: hidden;
 		border: 5px solid #fff;
 		width: 254px;
 		height: 254px;

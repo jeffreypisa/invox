@@ -15,21 +15,23 @@ import { scrolleffects } from './scripts/scrolleffects.js';
 import { scrollto } from './scripts/scrollto.js';
 // import { sticky_header } from './scripts/sticky_header.js';
 import { bgcolorchange } from './scripts/bgcolorchange.js';
+import { bgmove } from './scripts/bgmove.js';
 
 lity_init();
+matchheight_init();
 
 $( document ).ready(function() {
 	footer_down();
 	mobilemenu();
 	scrollto();
+	bgmove();
 	// sticky_header();
-	slick_init();
 	bgcolorchange();
 });
 
 $(window).on('load', function() {
-	matchheight_init();
 	animejs();
 	scrolleffects();
+	slick_init();
 	site_is_loaded();
 });

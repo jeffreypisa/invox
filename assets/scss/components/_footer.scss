@@ -1,39 +1,59 @@
 footer {
 	padding: 60px 0;
+	padding-bottom: 40px !important;
 	position: relative;
-	&:before {
-		background: url('../img/footer.png');
-		z-index: -1;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		content: '';
-		position: absolute;
-		background-size:contain;
-		background-position: center center;
-		background-repeat: no-repeat;
+	ul {
+		list-style-type: none;
+		padding: 0;
+		li {
+			margin-bottom: 4px;
+			a {
+				text-decoration: none;
+				transition: padding 1s $ease;
+				border-left: 0px solid #fff !important;
+				&:hover {
+					padding-left: 10px;
+					border-left: 4px solid #fff !important;
+					text-decoration: none;
+				}
+			}
+		}
 	}
-	&:after {
-		background: url('../img/shape-green.svg');
-		height: 20px;
-		content: '';
-		top: -18px;
-		left: 0;
-		right: 0;
-		position: absolute;
+	.footerbottom {
+		padding-top: 20px;
+		a {
+			text-decoration: none;
+		}
+		a:hover {
+			color: #fff !important;
+			text-decoration: underline;
+		}
 	}
 	img {
-		max-width: 216px;
+		max-width: 136px;
+		margin-bottom: 20px;
+	}
+	h1,h2,h3,h4,h5,h6 {
+		@extend .sub;
+		opacity: 0.5;
+	}
+	h2 {
 		margin-bottom: 20px;
 	}
 }
 
 @include media-breakpoint-up(md) {
 	footer {
+		padding: 80px 0;
 		img {
-			max-width: 250px;
+			max-width: 150px;
 			margin: 0;
 		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	footer {
+		padding: 100px 0;
 	}
 }

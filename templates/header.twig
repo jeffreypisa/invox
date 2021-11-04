@@ -1,28 +1,37 @@
 {% set headercolor = '' %}
 
+{% if fn('is_front_page') %}
+	{% set headercolor = 'text-white' %}
+{% endif %}
+
 {% for item in post.get_field('blokken') %}
 	{% if item.acf_fc_layout == 'banner' %}
-		{% set headercolor = 'text-white' %}
+		{% if item.afbeelding %}
+			{% set headercolor = 'text-white' %}
+		{% endif %}
 	{% endif %}
 {% endfor %}
 
 
-<header class="header text-white">
-	<div class="container"> 
+<header class="header {{ headercolor }}">
+	<div class="container-fluid px-md-5"> 
 		<div class="row g-2">
-			<div class="col-auto d-flex align-items-center">
+			<div class="col d-flex align-items-center">
 				<a class="header-brand" href="{{site.url}}" rel="home">
 					<span class="d-none">{{ site.name }}</span>
 				</a>
 			</div>
-			<div class="col d-none d-lg-flex align-items-center">
+			<div class="col-auto d-none d-lg-flex align-items-center">
 				{% include "menu.twig" with {'items': menu.get_items} %}
 			</div>
-			<div class="col-auto d-none d-lg-flex align-items-center">
-				<img src="{{ theme.link }}/assets/img/headerlogos.svg" height="46px" width="112px" style="transform: translateY(-14px);">
-			</div>
-			<div class="col-auto d-flex 	d-lg-none align-items-center">
-				<p class="weight-400 mb-0" style="font-size: 13px; transform: translateY(10px);"> Écht biologisch, écht lekker</p>
+			<div class="col-auto d-lg-none">
+				<a id="mobilemenubtn" class="btn-menu noline js-menu d-lg-none">
+					<div class="lines">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>

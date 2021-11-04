@@ -5,46 +5,21 @@
 	}
 	h1, h2, h3, h4, h5, h6,
 	.h1, .h2, .h3, .h4, .h5, .h6,
-	a {
+	a:not(.immune) {
 		color: #fff;
 	}
-	a {
+	a:not(.immune) {
 		&:hover {
-			color: $greenlight;
+			color: $red;
 		}
 	}
-}
-
-.bg-white + .bg-greylight,
-.bg-greylight + .bg-white {
-	position: relative;
-	&:after {
-		content: "";
-		position: absolute;
-		top: -44px;
-		left: 0;
-		right: 0;
-		background: url(../img/brush-greylight.svg);
-		height: 48px;
-		transform: rotate(0deg);
-		background-position: top center;
-		background-size: 1000px;
+	.sub {
+		opacity: .5;
 	}
 }
 
-.bg-greylight + .bg-white {
-	&:after {
-		background-image: url(../img/brush-white.svg);
-	}
-}
+
 
 @include media-breakpoint-up(lg) {
-	.bg-white + .bg-greylight,
-	.bg-greylight + .bg-white {
-		&:after {
-			top: -80px;
-			height: 85px;
-			background-size: 2000px;
-		}
-	}
+
 }

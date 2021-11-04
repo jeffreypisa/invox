@@ -1,0 +1,54 @@
+<section id="section{{ sectionno }}" class="mod-teamoverview d-flex align-items-center {% if item.afbeelding %}text-white{% else %}bg-greylight{% endif %}" data-scroll-section>
+	{% if item.afbeelding %}
+		<div class="fill-space" data-scroll data-scroll-speed="-2">
+			<div class="bg-actie"></div>
+			<div class="bg-cover" style="background-image: url({{ Image(item.afbeelding).src|resize(1920) }})">
+			</div>
+		</div>
+	{% endif %}
+	<div class="content w-100">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 offset-md-1 col-lg-4">
+					{% if item.titel %}
+						<h2> {{ item.titel }}</h2>
+					{% endif %}
+					{% if item.tekst %}
+						<p> {{ item.tekst }}</p>
+					{% endif %}
+					{% if item.link %}
+						<a href="{{ item.link.url }}" target="{{ item.link.target }}" class="btn-link"> {{ item.link.title }} </a>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="images">
+		<div class="container">
+			<div class="col-md-11 offset-md-1 col-lg-6 offset-lg-6">
+				<div class="row">
+					<div class="col-6" data-scroll data-scroll-speed="1">
+						{% if item.afbeelding1 %}
+							<div class="image1 bg-cover ratio-3x4" style="background-image: url({{ Image(item.afbeelding1).src|resize(1920) }})">
+							</div>
+						{% endif %}
+						{% if item.afbeelding2 %}
+							<div class="image2 bg-cover ratio-3x4" style="background-image: url({{ Image(item.afbeelding2).src|resize(1920) }})">
+							</div>
+						{% endif %}
+					</div>
+					<div class="col-6" data-scroll data-scroll-speed="-2">
+						{% if item.afbeelding3 %}
+							<div class="image3 bg-cover ratio-3x4 mt-5" style="background-image: url({{ Image(item.afbeelding3).src|resize(1920) }})">
+							</div>
+						{% endif %}
+						{% if item.afbeelding4 %}
+							<div class="image4 bg-cover ratio-3x4" style="background-image: url({{ Image(item.afbeelding4).src|resize(1920) }})">
+							</div>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> 

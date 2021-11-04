@@ -3,37 +3,28 @@
 // Font, line-height, and color for body text, headings, and more.
 
 @font-face {
-	font-family: 'MuseoSans';
-	src: url('../fonts/MuseoSans-300.woff2') format('woff2'),
-		url('../fonts/MuseoSans-300.woff') format('woff');
-	font-weight: 300;
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+		url('../fonts/Montserrat-SemiBold.woff') format('woff');
+	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'MuseoSans';
-	src: url('../fonts/MuseoSans-500.woff2') format('woff2'),
-		url('../fonts/MuseoSans-500.woff') format('woff');
-	font-weight: 500;
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+		url('../fonts/Roboto-Regular.woff') format('woff');
+	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'MuseoSans';
-	src: url('../fonts/MuseoSans-700.woff2') format('woff2'),
-		url('../fonts/MuseoSans-700.woff') format('woff');
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+		url('../fonts/Roboto-Bold.woff') format('woff');
 	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'OmnipopBrush';
-	src: url('../fonts/OmnipopBrush-400.woff2') format('woff2'),
-		url('../fonts/OmnipopBrush-400.woff') format('woff');
-	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
@@ -50,18 +41,30 @@
   url('../fonts/fa-brands-400.svg#fontawesome') format('svg');
 }
 
+@font-face {
+	  font-family: 'Font Awesome 5';
+	  font-style: normal;
+	  font-weight: normal;
+	  src: url('../fonts/fa-solid-900.eot');
+	  src: url('../fonts/fa-solid-900.eot?#iefix') format('embedded-opentype'),
+	  url('../fonts/fa-solid-900.woff2') format('woff2'),
+	  url('../fonts/fa-solid-900.woff') format('woff'),
+	  url('../fonts/fa-solid-900.ttf') format('truetype'),
+	  url('../fonts/fa-solid-900.svg#fontawesome') format('svg');
+	}
+
 .fab {
   font-family: 'Font Awesome 5 Brands';
 }
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-base:            'MuseoSans';
-$font-family-alt:			  'OmnipopBrush';
+$font-family-base:            'Roboto';
+$font-family-alt:			  'Montserrat';
 
 .altfont {
 	font-family: $font-family-alt;
-	font-weight: 400;
+	font-weight: 500;
 } 
 .weight-300 {
 	font-weight: 300 !important;
@@ -78,15 +81,27 @@ $font-family-alt:			  'OmnipopBrush';
 .weight-700 {
 	font-weight: 700 !important;
 }
-
 .text-lg {
 	font-size: 18px;
 	line-height: 28px;
 }
-
 .text-sm {
 	font-size: 12px;
 	line-height: 16px;
+}
+.sub {
+	font-family: $font-family-alt;
+	font-size: 13px;
+	line-height: 20px;
+	letter-spacing: 2px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $grey;
+	margin-bottom: 1rem;
+	line-height: 12px;
+	height: 12px;
+	display: block;
+	display: block;
 }
 
 body {
@@ -95,27 +110,9 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-h2 {
-	text-transform: uppercase;
-}
-
-* + h1,
-* + h2,
-* + h3,
-* + h4,
-* + h5,
-* + h6 {
-	margin-top: 60px;
-}
-
-h2.h1.altfont {
+h1 {
 	@include media-breakpoint-down(md) {
-		font-size: 45px !important;
-	}
-}
-.lead {
-	@include media-breakpoint-down(md) {
-		font-size: rfs-fluid-value(1.15rem);
+
 	}
 }
 
@@ -126,31 +123,31 @@ h2.h1.altfont {
 // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
 // $font-size-base affects the font size of the body text
 $font-size-root:              null;
-$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$font-size-base:              17px; // Assumes the browser default, typically `16px`
 $font-size-sm:                $font-size-base * .75;
 $font-size-lg:                $font-size-base * 1.5;
 
 $font-weight-base:            $font-weight-normal;
 
-$line-height-base:            1.5;
+$line-height-base:            1.76;
 $line-height-sm:              1.25;
-$line-height-lg:              2;
+$line-height-lg:              2.25;
 
-$h1-font-size:                $font-size-base * 5;
-$h2-font-size:                $font-size-base * 2;
-$h3-font-size:                $font-size-base * 1.5;
-$h4-font-size:                $font-size-base * 1.24;
-$h5-font-size:                $font-size-base * 1;
+$h1-font-size:                $font-size-base * 3.53;
+$h2-font-size:                $font-size-base * 2.35;
+$h3-font-size:                $font-size-base * 2.12;
+$h4-font-size:                $font-size-base * 1.76;
+$h5-font-size:                $font-size-base * 1.29;
 $h6-font-size:                $font-size-base;
 // scss-docs-end font-variables
 
 // scss-docs-start headings-variables
-$headings-margin-bottom:      $spacer * 2;
-$headings-font-family:        null;
+$headings-margin-bottom:      $spacer;
+$headings-font-family:        $font-family-alt;
 $headings-font-style:         null;
-$headings-font-weight:        700;
-$headings-line-height:        1.4;
-$headings-color:              $greendark;
+$headings-font-weight:        600;
+$headings-line-height:        1.2;
+$headings-color:              $dark;
 // scss-docs-end headings-variables
 
 
@@ -163,12 +160,12 @@ $display-font-sizes: (
   6: 2.5rem
 );
 
-$display-font-weight: 700;
+$display-font-weight: 600;
 $display-line-height: $headings-line-height;
 	
 
 // scss-docs-start type-variables
-$lead-font-size:              $font-size-base * 1.37;
+$lead-font-size:              $font-size-base * 1.29;
 $lead-font-weight:            400;
 
 $small-font-size:             .875em;
@@ -176,3 +173,7 @@ $small-font-size:             .875em;
 $sub-sup-font-size:           .75em;
 
 $text-muted:                  $gray-600;
+
+.h1 {
+	line-height: 1.08 !important;
+}
