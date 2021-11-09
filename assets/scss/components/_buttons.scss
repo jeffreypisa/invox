@@ -1,11 +1,57 @@
-.btn {
-	background: $red;
+.mod-content, .mod-categories, .mod-teamoverview, header {
+	a:not(.btn) {
+		transition: 0.15s ease-in;
+		position: relative;	  
+		&:not(.immune):before {
+			position: absolute;
+			bottom: -4px;
+			left: 0;
+			content: '';
+			height: 2px;
+			width: 0%;
+			transition: 0.15s ease-in-out;
+		}
+		&:hover {
+			text-decoration: none;
+			&:before {
+				width: 100%;
+			}
+		}
+		&:active, &:focus, &:target {
+		
+		}
+	}
+}
+	
+.btn,
+body .nf-form-content button, 
+body .nf-form-content input[type=button],
+body .nf-form-content input[type=submit] {
+	background: transparent;
 	font-size: 18px;
 	line-height: 28px;
+	border: 3px solid $red;
+	color: $red;
+	position: relative;
+	transition: all 0.3s $ease;
+	&:after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		transition: all 0.3s $ease;
+		width: 0%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: #fff;
+	}
 	&:hover, &:focus, &:target {
-		background: lighten($red, 15%);
 		color: #fff !important;
+		background: transparent;
 		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+		&:after {
+			width: 100%;
+		}
 	}
 	&:disabled {
 		background: $grey;
@@ -30,19 +76,10 @@
 	}
 	&.prev {
 		&:after {
-			display: none;
-		}
-		&:before {
-			display: inline-block;
-			font-style: normal;
-			font-variant: normal;
-			text-rendering: auto;
-			-webkit-font-smoothing: antialiased;
-			font-family: "Font Awesome 5"; 
-			font-weight: 700; 
+			float:left;
+			line-height: 30px;
 			content: "\f053";
-			font-size: 11px;
-			transition: 0.2s $ease;
+			margin-left: auto;
 			margin-right: 8px;
 			transform: translateY(-1px) translateX(0px);	
 		}
@@ -55,8 +92,9 @@
 			color: $dark;
 			margin-left: 2px;
 		}
-		&:before {
+		&.prev:after {
 			color: $dark;
+			margin-left: 0;
 			transform: translateY(-1px)  translateX(3px);	
 		}
 	}
@@ -67,6 +105,9 @@
 		color: #fff;
 		&:after {
 			color: #fff;
+		}
+		&:before {
+			background: #fff !important;
 		}
 		&:hover {
 			color: #fff !important;

@@ -1,7 +1,7 @@
 <section class="mod-banner d-flex align-items-center {% if item.afbeelding %}bg-dark text-white{% else %}no-bg {{ item.achtergrond }}{% endif %}" data-scroll-section>
 	{% if item.afbeelding %}
 		<div class="fill-space" data-scroll data-scroll-speed="-3">
-			{% if iten.afbeelding %}
+			{% if item.afbeelding %}
 				<div class="bg-gradient"></div>
 			{% endif %}
 			<div class="bg-cover" style="background-image: url({{ Image(item.afbeelding).src|resize(1920) }})">

@@ -44,6 +44,10 @@ header {
 			height: 62px;
 			width: 164px;
 		}
+		.nav-link {
+			padding: 0;
+			margin: 0.5rem 1rem;
+		}
 		&.nav-up {
 			transform: translateY(-144px);
 			transition-delay: color .6s;

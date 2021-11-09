@@ -1,10 +1,10 @@
 {
     "key": "group_5b74183617edc",
-    "title": "Paginabouwer",
+    "title": "Pagebuilder",
     "fields": [
         {
             "key": "field_5b74183a2ef6c",
-            "label": "Strook",
+            "label": "Block",
             "name": "blokken",
             "type": "flexible_content",
             "instructions": "",
@@ -24,7 +24,7 @@
                     "sub_fields": [
                         {
                             "key": "field_61826366e16c8",
-                            "label": "Achtergrond",
+                            "label": "Background color",
                             "name": "achtergrond",
                             "type": "select",
                             "instructions": "",
@@ -49,7 +49,7 @@
                         },
                         {
                             "key": "field_61700318b3acf",
-                            "label": "Afbeelding",
+                            "label": "Image",
                             "name": "afbeelding",
                             "type": "image",
                             "instructions": "",
@@ -92,7 +92,7 @@
                         },
                         {
                             "key": "field_6170031fb3ad0",
-                            "label": "Titel",
+                            "label": "Title",
                             "name": "titel",
                             "type": "text",
                             "instructions": "",
@@ -121,7 +121,7 @@
                     "sub_fields": [
                         {
                             "key": "field_612e441be92b4",
-                            "label": "Achtergrond",
+                            "label": "Background color",
                             "name": "achtergrond",
                             "type": "select",
                             "instructions": "",
@@ -133,8 +133,8 @@
                                 "id": ""
                             },
                             "choices": {
-                                "bg-white": "Wit",
-                                "bg-greylight": "Lichtgrijs"
+                                "bg-white": "White",
+                                "bg-greylight": "Lightgrey"
                             },
                             "default_value": false,
                             "allow_null": 0,
@@ -146,7 +146,7 @@
                         },
                         {
                             "key": "field_61826cb4ec6f6",
-                            "label": "Links uitlijnen",
+                            "label": "Align left",
                             "name": "links_uitlijnen",
                             "type": "true_false",
                             "instructions": "",
@@ -184,7 +184,7 @@
                         },
                         {
                             "key": "field_617009dfa85e3",
-                            "label": "Titel",
+                            "label": "Title",
                             "name": "titel",
                             "type": "text",
                             "instructions": "",
@@ -222,7 +222,7 @@
                         },
                         {
                             "key": "field_61713f1b089f2",
-                            "label": "Tekst",
+                            "label": "Text",
                             "name": "tekst",
                             "type": "wysiwyg",
                             "instructions": "",
@@ -241,7 +241,7 @@
                         },
                         {
                             "key": "field_61713f46089f4",
-                            "label": "Knop",
+                            "label": "Button",
                             "name": "knop",
                             "type": "link",
                             "instructions": "",
@@ -276,12 +276,12 @@
                 "layout_61713f07089eb": {
                     "key": "layout_61713f07089eb",
                     "name": "content_columns",
-                    "label": "Content in kolommen",
+                    "label": "Content in columns",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_61713f07089ec",
-                            "label": "Achtergrond",
+                            "label": "Background color",
                             "name": "achtergrond",
                             "type": "select",
                             "instructions": "",
@@ -293,20 +293,20 @@
                                 "id": ""
                             },
                             "choices": {
-                                "bg-white": "Wit",
-                                "bg-greylight": "Lichtgrijs"
+                                "bg-white": "White",
+                                "bg-greylight": "Lightgrey"
                             },
                             "default_value": false,
                             "allow_null": 0,
                             "multiple": 0,
                             "ui": 0,
-                            "ajax": 0,
                             "return_format": "value",
+                            "ajax": 0,
                             "placeholder": ""
                         },
                         {
                             "key": "field_61713f07089ed",
-                            "label": "Titel",
+                            "label": "Title",
                             "name": "titel",
                             "type": "text",
                             "instructions": "",
@@ -340,7 +340,7 @@
                         },
                         {
                             "key": "field_61713f07089ef",
-                            "label": "Kolom",
+                            "label": "Column",
                             "name": "kolom",
                             "type": "repeater",
                             "instructions": "",
@@ -355,11 +355,11 @@
                             "min": 0,
                             "max": 3,
                             "layout": "block",
-                            "button_label": "Nieuwe kolom",
+                            "button_label": "New column",
                             "sub_fields": [
                                 {
                                     "key": "field_61713f07089f0",
-                                    "label": "Tekst",
+                                    "label": "Text",
                                     "name": "tekst",
                                     "type": "wysiwyg",
                                     "instructions": "",
@@ -385,12 +385,12 @@
                 "layout_61716a2694d6f": {
                     "key": "layout_61716a2694d6f",
                     "name": "content_image",
-                    "label": "Content met afbeelding",
+                    "label": "Content with image",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_61716a2694d70",
-                            "label": "Achtergrond",
+                            "label": "Background color",
                             "name": "achtergrond",
                             "type": "select",
                             "instructions": "",
@@ -402,20 +402,20 @@
                                 "id": ""
                             },
                             "choices": {
-                                "bg-white": "Wit",
-                                "bg-greylight": "Lichtgrijs"
+                                "bg-white": "White",
+                                "bg-greylight": "Lightgrey"
                             },
                             "default_value": false,
                             "allow_null": 0,
                             "multiple": 0,
                             "ui": 0,
-                            "ajax": 0,
                             "return_format": "value",
+                            "ajax": 0,
                             "placeholder": ""
                         },
                         {
                             "key": "field_61716a3194d75",
-                            "label": "Afbeelding",
+                            "label": "Image",
                             "name": "afbeelding",
                             "type": "image",
                             "instructions": "",
@@ -483,7 +483,7 @@
                         },
                         {
                             "key": "field_61716a2694d71",
-                            "label": "Titel",
+                            "label": "Title",
                             "name": "titel",
                             "type": "text",
                             "instructions": "",
@@ -502,7 +502,7 @@
                         },
                         {
                             "key": "field_61716a4d94d77",
-                            "label": "Tekst",
+                            "label": "Text",
                             "name": "tekst",
                             "type": "wysiwyg",
                             "instructions": "",
@@ -521,7 +521,7 @@
                         },
                         {
                             "key": "field_61716a2694d72",
-                            "label": "Knop",
+                            "label": "Button",
                             "name": "knop",
                             "type": "link",
                             "instructions": "",
@@ -541,12 +541,12 @@
                 "layout_61362c17a00d0": {
                     "key": "layout_61362c17a00d0",
                     "name": "tegels",
-                    "label": "Tegels",
+                    "label": "Tiles",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_61362c17a00d1",
-                            "label": "Achtergrond",
+                            "label": "Background color",
                             "name": "achtergrond",
                             "type": "select",
                             "instructions": "",
@@ -558,20 +558,20 @@
                                 "id": ""
                             },
                             "choices": {
-                                "bg-white": "Wit",
-                                "bg-greylight": "Lichtgrijs"
+                                "bg-white": "White",
+                                "bg-greylight": "Lightgrey"
                             },
                             "default_value": false,
                             "allow_null": 0,
                             "multiple": 0,
                             "ui": 0,
-                            "ajax": 0,
                             "return_format": "value",
+                            "ajax": 0,
                             "placeholder": ""
                         },
                         {
                             "key": "field_6177fef22ed1b",
-                            "label": "Toon",
+                            "label": "Show",
                             "name": "toon",
                             "type": "select",
                             "instructions": "",
@@ -583,8 +583,8 @@
                                 "id": ""
                             },
                             "choices": {
-                                "newsrecent": "Recent nieuws",
-                                "custom": "Eigen blokken"
+                                "newsrecent": "Recent news",
+                                "custom": "Custom blocks"
                             },
                             "default_value": false,
                             "allow_null": 0,
@@ -596,7 +596,7 @@
                         },
                         {
                             "key": "field_61362c4ba00e4",
-                            "label": "Titel",
+                            "label": "Title",
                             "name": "titel",
                             "type": "text",
                             "instructions": "",
@@ -615,7 +615,7 @@
                         },
                         {
                             "key": "field_6177fe7602be9",
-                            "label": "Tekst",
+                            "label": "Text",
                             "name": "tekst",
                             "type": "textarea",
                             "instructions": "",
@@ -634,7 +634,7 @@
                         },
                         {
                             "key": "field_61362c4fa00e5",
-                            "label": "Tegels",
+                            "label": "Tiles",
                             "name": "tegels",
                             "type": "repeater",
                             "instructions": "",
@@ -657,7 +657,7 @@
                             "min": 0,
                             "max": 0,
                             "layout": "table",
-                            "button_label": "Nieuwe tegel",
+                            "button_label": "New tile",
                             "sub_fields": [
                                 {
                                     "key": "field_61362c5ca00e6",
@@ -735,7 +735,7 @@
                     "sub_fields": [
                         {
                             "key": "field_617810b9c8c1a",
-                            "label": "Afbeelding",
+                            "label": "Image",
                             "name": "afbeelding",
                             "type": "image",
                             "instructions": "",
@@ -759,7 +759,7 @@
                         },
                         {
                             "key": "field_617810e9c8c1c",
-                            "label": "Foto 1",
+                            "label": "Photo 1",
                             "name": "afbeelding1",
                             "type": "image",
                             "instructions": "",
@@ -783,7 +783,7 @@
                         },
                         {
                             "key": "field_61781103c8c1d",
-                            "label": "Foto 2",
+                            "label": "Photo 2",
                             "name": "afbeelding2",
                             "type": "image",
                             "instructions": "",
@@ -807,7 +807,7 @@
                         },
                         {
                             "key": "field_61781108c8c1e",
-                            "label": "Foto 3",
+                            "label": "Photo 3",
                             "name": "afbeelding3",
                             "type": "image",
                             "instructions": "",
@@ -831,7 +831,7 @@
                         },
                         {
                             "key": "field_61781110c8c1f",
-                            "label": "Foto 4",
+                            "label": "Photo 4",
                             "name": "afbeelding4",
                             "type": "image",
                             "instructions": "",
@@ -855,7 +855,7 @@
                         },
                         {
                             "key": "field_617810a6c8c14",
-                            "label": "Titel",
+                            "label": "Title",
                             "name": "titel",
                             "type": "text",
                             "instructions": "",
@@ -874,7 +874,7 @@
                         },
                         {
                             "key": "field_617810a6c8c15",
-                            "label": "Tekst",
+                            "label": "Text",
                             "name": "tekst",
                             "type": "textarea",
                             "instructions": "",
@@ -913,12 +913,12 @@
                 "layout_617ab895915e5": {
                     "key": "layout_617ab895915e5",
                     "name": "teammembers",
-                    "label": "Team leden",
+                    "label": "Team members",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_617ab895915ea",
-                            "label": "Achtergrond",
+                            "label": "Background color",
                             "name": "achtergrond",
                             "type": "select",
                             "instructions": "",
@@ -930,8 +930,8 @@
                                 "id": ""
                             },
                             "choices": {
-                                "bg-white": "Wit",
-                                "bg-greylight": "Lichtgrijs"
+                                "bg-white": "White",
+                                "bg-greylight": "Lightgrey"
                             },
                             "default_value": false,
                             "allow_null": 0,
@@ -943,7 +943,7 @@
                         },
                         {
                             "key": "field_617ab895915eb",
-                            "label": "Titel",
+                            "label": "Title",
                             "name": "titel",
                             "type": "text",
                             "instructions": "",
@@ -962,7 +962,7 @@
                         },
                         {
                             "key": "field_617ab895915ec",
-                            "label": "Tekst",
+                            "label": "Text",
                             "name": "tekst",
                             "type": "textarea",
                             "instructions": "",
@@ -981,7 +981,7 @@
                         },
                         {
                             "key": "field_617ab903915ef",
-                            "label": "Team links",
+                            "label": "Team left",
                             "name": "team_links",
                             "type": "post_object",
                             "instructions": "",
@@ -1003,7 +1003,7 @@
                         },
                         {
                             "key": "field_617ab936915f4",
-                            "label": "Team rechts",
+                            "label": "Team right",
                             "name": "team_rechts",
                             "type": "post_object",
                             "instructions": "",
@@ -1035,7 +1035,7 @@
                     "sub_fields": [
                         {
                             "key": "field_61363649764df",
-                            "label": "Achtergrond",
+                            "label": "Background color",
                             "name": "achtergrond",
                             "type": "select",
                             "instructions": "",
@@ -1047,15 +1047,15 @@
                                 "id": ""
                             },
                             "choices": {
-                                "bg-white": "Wit",
-                                "bg-greylight": "Lichtgrijs"
+                                "bg-white": "White",
+                                "bg-greylight": "Lightgrey"
                             },
                             "default_value": false,
                             "allow_null": 0,
                             "multiple": 0,
                             "ui": 0,
-                            "ajax": 0,
                             "return_format": "value",
+                            "ajax": 0,
                             "placeholder": ""
                         },
                         {
@@ -1105,12 +1105,12 @@
                 "layout_617157b8fd878": {
                     "key": "layout_617157b8fd878",
                     "name": "form",
-                    "label": "Formulier",
+                    "label": "Form",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_617157b8fd879",
-                            "label": "Achtergrond",
+                            "label": "Background color",
                             "name": "achtergrond",
                             "type": "select",
                             "instructions": "",
@@ -1122,20 +1122,20 @@
                                 "id": ""
                             },
                             "choices": {
-                                "bg-white": "Wit",
-                                "bg-greylight": "Lichtgrijs"
+                                "bg-white": "White",
+                                "bg-greylight": "Lightgrey"
                             },
                             "default_value": false,
                             "allow_null": 0,
                             "multiple": 0,
                             "ui": 0,
-                            "ajax": 0,
                             "return_format": "value",
+                            "ajax": 0,
                             "placeholder": ""
                         },
                         {
                             "key": "field_617157ccfd87d",
-                            "label": "Titel",
+                            "label": "Title",
                             "name": "titel",
                             "type": "text",
                             "instructions": "",
@@ -1154,7 +1154,7 @@
                         },
                         {
                             "key": "field_618295423c766",
-                            "label": "Tekst",
+                            "label": "Text",
                             "name": "tekst",
                             "type": "wysiwyg",
                             "instructions": "",
@@ -1173,7 +1173,7 @@
                         },
                         {
                             "key": "field_6182954a3c767",
-                            "label": "Formulier shortcode",
+                            "label": "Form shortcode",
                             "name": "formulier_shortcode",
                             "type": "wysiwyg",
                             "instructions": "",
@@ -1202,7 +1202,7 @@
                     "sub_fields": [
                         {
                             "key": "field_6182952f3c762",
-                            "label": "Achtergrond",
+                            "label": "Background color",
                             "name": "achtergrond",
                             "type": "select",
                             "instructions": "",
@@ -1214,15 +1214,15 @@
                                 "id": ""
                             },
                             "choices": {
-                                "bg-white": "Wit",
-                                "bg-greylight": "Lichtgrijs"
+                                "bg-white": "White",
+                                "bg-greylight": "Lightgrey"
                             },
                             "default_value": false,
                             "allow_null": 0,
                             "multiple": 0,
                             "ui": 0,
-                            "ajax": 0,
                             "return_format": "value",
+                            "ajax": 0,
                             "placeholder": ""
                         },
                         {
@@ -1246,7 +1246,7 @@
                         },
                         {
                             "key": "field_6182952f3c764",
-                            "label": "Titel",
+                            "label": "Title",
                             "name": "titel",
                             "type": "text",
                             "instructions": "",
@@ -1265,7 +1265,7 @@
                         },
                         {
                             "key": "field_6182952f3c765",
-                            "label": "Knop",
+                            "label": "Button",
                             "name": "knop",
                             "type": "link",
                             "instructions": "",
@@ -1283,7 +1283,7 @@
                     "max": ""
                 }
             },
-            "button_label": "Nieuwe strook",
+            "button_label": "New block",
             "min": "",
             "max": ""
         }
@@ -1307,5 +1307,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1635947871
+    "modified": 1636469218
 }

@@ -39,15 +39,17 @@ export function slick_init() {
 		var activeHeight = activeItem.innerHeight();
 		var heightnav = $('.bannerslider-nav').innerHeight();
 		
-		var itemPos = activeItem.position();
-				  
-		activeItem.addClass('active');
-		
-		$(".selector").css({
-			"left":itemPos.left + "px", 
-			"width": activeWidth + "px",
-			"height": activeHeight + "px"
-		});
+		setTimeout( function() {
+			var itemPos = activeItem.position();
+					  
+			activeItem.addClass('active');
+			
+			$(".selector").css({
+				"left":itemPos.left + "px", 
+				"width": activeWidth + "px",
+				"height": activeHeight + "px"
+			});
+		}, 1);
 		
 		var pullup = heightnav;
 		$(".bannerslider-nav").css('margin-top', pullup * -1)

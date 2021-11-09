@@ -33,13 +33,7 @@
         
         .bg-actie,
         .mod-bannerslider .bannerslider-nav .item a .bg,
-        .opensidemenu .btn-menu,
-        body .nf-form-content button,
-        body .nf-form-content button:hover, 
-        body .nf-form-content input[type=button],
-        body .nf-form-content input[type=button]:hover,
-        body .nf-form-content input[type=submit],
-        body .nf-form-content input[type=submit]:hover {
+        .opensidemenu .btn-menu {
             background: {{ kleur_actie }};
         }
         
@@ -67,6 +61,12 @@
         header ul li.current-page-ancestor a:hover,
         header ul li.current_page_item a,
         header ul li.current_page_item a:hover,
+        body.tax-nieuws_categorie header ul li.menu-item-250 a,
+        body.tax-nieuws_categorie header ul li.menu-item-250 a:hover,
+        body.single-nieuws header ul li.menu-item-250 a,
+        body.single-nieuws header ul li.menu-item-250 a:hover,
+        body.single-team header ul li.menu-item-202 a,
+        body.single-team header ul li.menu-item-202 a:hover,
         header .dropdown a:hover+.dropdown-menu .nav-item a:hover, 
         header .dropdown .dropdown-menu:hover .nav-item a:hover,
         header .dropdown .dropdown-menu .nav-item.current-menu-item a, 
@@ -83,14 +83,26 @@
             color: {{ kleur_actie }};
         }
         
-        .btn-primary {
-            background: {{ kleur_actie }};  
-            color: #fff;
+        .btn,
+        body .nf-form-content button, 
+        body .nf-form-content input[type=button],
+        body .nf-form-content input[type=submit],
+        body .nf-form-content button:hover, 
+        body .nf-form-content input[type=button]:hover,
+        body .nf-form-content input[type=submit]:hover {
+            color: {{ kleur_actie }};
+            border-color: {{ kleur_actie }};
         }
         
-        .btn-primary:hover {
+        .btn:hover {
+            border-color: {{ kleur_actie }};
+        }
+        
+        .btn:hover:after,
+        body .nf-form-content button:hover:after, 
+        body .nf-form-content input[type=button]:hover:after,
+        body .nf-form-content input[type=submit]:hover:after {
             background: {{ kleur_actie }};
-            color: #fff;
         }
         
         .btn-secondary {
@@ -104,9 +116,18 @@
         
         a:not(.btn),
         a:not(.btn):hover,
+        a:not(.btn):focus,
         .btn-link,
-        .btn-link:hover {
+        .btn-link:hover,
+        .btn-link:focus {
             color: {{ kleur_actie }}
+        }
+        
+        .mod-content a:not(.btn):before,
+        .mod-categories a:not(.btn):before,
+        .mod-teamoverview a:not(.btn):before,
+        header a:not(.btn):before {
+            background: {{ kleur_actie }}
         }
     </style>
 </head>

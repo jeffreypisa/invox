@@ -24,7 +24,7 @@ function create_nieuws_tax() {
 		'show_ui'           => true,
 		'show_admin_column' => true,
 		'query_var'         => true,
-		'rewrite' 					=> array('slug' => 'nieuws', 'with_front' => false )
+		'rewrite' 					=> array('slug' => 'news', 'with_front' => false )
 	);
 
   register_taxonomy('nieuws_categorie', array('nieuws'), $args);

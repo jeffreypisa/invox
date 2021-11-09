@@ -22,7 +22,7 @@
 	.dropdown-menu:hover {
 		opacity: 1;
 		display: block;
-		transform: translateY(0px);
+		transform: translateY(-8px);
 		transition: opacity 1s $ease, transform 1s $ease;
 		pointer-events: all;
 		.nav-item {

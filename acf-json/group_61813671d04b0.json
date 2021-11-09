@@ -1,10 +1,10 @@
 {
     "key": "group_61813671d04b0",
-    "title": "Teamlid",
+    "title": "Teammember",
     "fields": [
         {
             "key": "field_61813674c34c6",
-            "label": "Functie",
+            "label": "Job",
             "name": "functie",
             "type": "text",
             "instructions": "",
@@ -23,7 +23,7 @@
         },
         {
             "key": "field_61813681c34c7",
-            "label": "Korte beschrijving",
+            "label": "Short description",
             "name": "korte_beschrijving",
             "type": "textarea",
             "instructions": "",
@@ -42,7 +42,7 @@
         },
         {
             "key": "field_61813689c34c8",
-            "label": "Knop",
+            "label": "Button",
             "name": "knop",
             "type": "link",
             "instructions": "",
@@ -73,5 +73,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1635858253
+    "modified": 1636469303
 }

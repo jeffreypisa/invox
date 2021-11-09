@@ -4,6 +4,12 @@
 	{% set headercolor = 'text-white' %}
 {% endif %}
 
+{% if fn('is_404') %}
+	{% if options.achtergrond404 %}
+		{% set headercolor = 'text-white' %}
+	{% endif %}
+{% endif %}
+
 {% for item in post.get_field('blokken') %}
 	{% if item.acf_fc_layout == 'banner' %}
 		{% if item.afbeelding %}
@@ -12,12 +18,11 @@
 	{% endif %}
 {% endfor %}
 
-
 <header class="header {{ headercolor }}">
 	<div class="container-fluid px-md-5"> 
 		<div class="row g-2">
 			<div class="col d-flex align-items-center">
-				<a class="header-brand" href="{{site.url}}" rel="home">
+				<a class="header-brand immune" href="{{site.url}}" rel="home">
 					<span class="d-none">{{ site.name }}</span>
 				</a>
 			</div>
