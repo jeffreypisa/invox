@@ -15,10 +15,11 @@
 					</div>
 					<br><br>
 					{% for item in item.team_links %}
-						<div class="team mb-5">
+						<a href="{{ item.link }}" class="team mb-5">
 							<div class="d-inline-block mb-1" style="width: 100%;">
 								<div class="image-holder image ratio-3x4 anime-reveal">
-									<div class="fill-space bg-cover" style="background-image: url({{ Image(item.thumbnail)|resize(1024) }})">
+									<div class="fill-space bg-cover bg-grey" style="background-image: url({{ Image(item.thumbnail)|resize(1024) }})">
+										<div class="bg-gradient"></div>
 										<div class="content">
 											<h4 class="mb-1"> {{ item.title }} </h4>
 											{{ item.functie }}
@@ -26,25 +27,26 @@
 									</div>
 								</div>
 							</div>	
-							<a href="{{ item.link }}" class="btn btn-primary"> Info</a>
-						</div>
+							<div class="btn btn-primary"> Info</div>
+						</a>
 					{% endfor %}
 				</div>
 				<div class="col-md-4 offset-md-2" data-scroll data-scroll-speed="-1">
 					{% for item in item.team_rechts %}
-						<div class="team mb-5">
+						<a href="{{ item.link }}" class="team mb-5">
 							<div class="d-inline-block mb-1" style="width: 100%;">
 								<div class="image-holder image ratio-3x4 anime-reveal">
-									<div class="fill-space bg-cover" style="background-image: url({{ Image(item.thumbnail)|resize(1024) }})">
+									<div class="fill-space bg-cover bg-grey" style="background-image: url({{ Image(item.thumbnail)|resize(1024) }})">
+										<div class="bg-gradient"></div>
 										<div class="content">
-											<h4> {{ item.title }} </h4>
+											<h4 class="mb-1"> {{ item.title }} </h4>
 											{{ item.functie }}
 										</div>
 									</div>
 								</div>
 							</div>	
-							<a href="{{ item.link }}" class="btn btn-primary"> Info</a>
-						</div>
+							<div class="btn btn-primary"> Info</div>
+						</a>
 					{% endfor %}
 				</div>
 			</div>

@@ -24,16 +24,18 @@ export function bgcolorchange() {
 	
 	// bluedark
 	let observer_bluedark
-	const items_bluedark = document.querySelectorAll('.bgcolor-change-bluedark');
+	const items_bluedark = document.querySelectorAll('.bgcolor-change-dark');
 	
 	observer_bluedark = new IntersectionObserver((entries) => {
 	  entries.forEach(entry => {
 		if (entry.intersectionRatio > 0) {
-			if(!$('body').hasClass('bg-bluedark')) {
-				$('body').addClass('bg-bluedark');
+			if(!$('.mod-cta').hasClass('bg-basis')) {
+				setTimeout(function() {
+					$('.mod-cta').addClass('bg-basis').removeClass('text-dark').addClass('text-white');
+				}, 1000);
 			}
 		} else {
-			$('body').removeClass('bg-bluedark');
+			$('.mod-cta').removeClass('bg-basis').removeClass('text-white').addClass('text-dark');
 		}
 	  });
 	});

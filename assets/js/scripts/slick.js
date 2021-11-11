@@ -79,10 +79,12 @@ export function slick_init() {
 			
 			activeItem.addClass('active');
 			
-			setTimeout(function() {
-				activeItem.addClass('hoverable');
-			}, 800);
-		
+			if (activeItem.hasClass('has-link')) {
+				setTimeout(function() {
+					activeItem.addClass('hoverable');
+				}, 800);
+			}
+			
 			activeWidth = activeItem.innerWidth();
 			activeHeight = activeItem.innerHeight();
 			var itemPos = activeItem.position();

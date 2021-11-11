@@ -369,9 +369,9 @@
         },
         {
             "key": "field_5f0ef4538e18c",
-            "label": "Button text",
-            "name": "knoptekstje404",
-            "type": "text",
+            "label": "Button",
+            "name": "knop404",
+            "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -380,11 +380,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "return_format": "array"
         },
         {
             "key": "field_5f0ef47c8e18d",
@@ -428,5 +424,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1636469379
+    "modified": 1636624536
 }

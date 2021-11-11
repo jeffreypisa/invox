@@ -11,6 +11,7 @@
 		right: 0;
 		top: calc(100% - 300px);
 		z-index: 1;
+		filter: grayscale(100%);
 	}
 	.fill-space {
 		.bg-cover {

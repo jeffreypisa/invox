@@ -3,50 +3,6 @@ import $ from "jquery";
 
 export function animejs() {
 	
-	// Banner text animation
-	
-/*
-	$( ".letters" ).each(function() {
-		var thetext = $(this).text();
-		var newtext = thetext.replace(/\S/g, "<span class='letter'>$&</span>");
-		$(this).empty().append(newtext);
-	});
-		
-	anime.timeline({
-		loop: false,
-		easing: 'easeOutExpo'
-	})
-	.add({
-		targets: '.ml10 .insonder',
-		opacity: 0,
-		duration: 0,
-		delay: 500
-	})
-	.add({
-		targets: '.ml10 .line:nth-child(1) .letter',
-		rotateY: [-90, 0],
-		duration: 500,
-		delay: (el, i) => 45 * i
-	})
-	.add({
-		targets: '.ml10 .line:nth-child(2) .letter',
-		rotateY: [-90, 0],
-		duration: 500,
-		delay: (el, i) => 45 * i
-	})
-	.add({
-		targets: '.ml10 .line:nth-child(3) .letter',
-		rotateY: [-90, 0],
-		duration: 500,
-		delay: (el, i) => 45 * i
-	})
-	.add({
-		targets: '.ml10 .insonder',
-		opacity: 1,
-		duration: 1000
-	})
-	*/
-	
 	// Anime Reveal
 	
 	let observer_reveal;

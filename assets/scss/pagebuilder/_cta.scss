@@ -1,5 +1,12 @@
 .mod-cta {
 	padding: 100px 0;
+	transition: background 6s $ease, color 6s $ease;
+	margin-bottom: -1px;
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6,
+	a:not(.immune) {
+		transition: color 6s $ease;
+	}
 }
 
 @include media-breakpoint-up(md) {

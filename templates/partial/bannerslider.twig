@@ -41,8 +41,8 @@
 				<div class="selector d-none d-lg-block"></div>
 				<div class="row">
 					{% for item in post.get_field('slider') %}
-						<div class="col-lg">
-							<div id="bannerslider_nav_{{ loop.index0 }}" class="item text-dark">
+						<div class="col-lg-4">
+							<div id="bannerslider_nav_{{ loop.index0 }}" class="item text-dark {% if item.link %}has-link{% endif %}">
 								{% if item.link %}
 									<a href="{{ item.link.url }}" target="{{ item.link.target }}" class="action">
 										<span class="text">{{ item.link.title }} <i class="fas fa-chevron-right"></i></span>

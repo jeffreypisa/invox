@@ -1201,31 +1201,6 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_6182952f3c762",
-                            "label": "Background color",
-                            "name": "achtergrond",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "bg-white": "White",
-                                "bg-greylight": "Lightgrey"
-                            },
-                            "default_value": false,
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "return_format": "value",
-                            "ajax": 0,
-                            "placeholder": ""
-                        },
-                        {
                             "key": "field_6182952f3c763",
                             "label": "Tagline",
                             "name": "tagline",
@@ -1307,5 +1282,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1636469218
+    "modified": 1636634982
 }

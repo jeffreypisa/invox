@@ -73,8 +73,8 @@
 					display: block;
 					position: absolute;
 					top: 0;
-					left: 0;
-					right: 0;
+					left: 5px;
+					right: 5px;
 					height: 50px;
 					overflow: hidden;
 					padding: 10px 15px;
@@ -86,8 +86,9 @@
 			}
 			&.active {
 				color: $dark !important;
+				border-color: $dark;
 				.item-header {
-					color: $red;
+					color: $dark;
 				}
 			}
 			&:not(.active):hover {
@@ -103,7 +104,7 @@
 		.slick-slide {
 			.item {
 				.bg-cover {
-					transform: scale(1);
+					transform: scale(1.1);
 					transition: 3s $ease;
 					transition-delay: 1s;
 				}
@@ -137,10 +138,7 @@
 			&.reset-animation {
 				.item {
 					.bg-cover {
-						-webkit-transform: scale(1);
-						-ms-transform: scale(1);
-						transform: scale(1);
-						-webkit-transition: all 0s ease-out;
+						transform: scale(1.1);
 						transition: all 0s ease-out;
 					}
 					.sub {
@@ -195,6 +193,10 @@
 	.bannerslider-nav {
 		.item {
 			border-left: 5px solid transparent;
+			padding: 10px 15px !important;
+			a {
+				left: -5px !important;
+			}
 			&.active {
 				background: #fff;
 				margin-bottom: 3px;
@@ -219,7 +221,7 @@
 	.mod-bannerslider {
 		.bannerslider {
 			.item {
-				height: 600px;
+				height: 660px;
 			}
 		}
 	}

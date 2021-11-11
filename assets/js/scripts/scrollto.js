@@ -9,6 +9,23 @@ export function scrollto() {
     }, 500);
   });
   
+  $(document).on('click', 'a.team', function (event) {
+    event.preventDefault();
+  
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+  });
+  
+  $("a.team").on({
+      mouseenter: function () {
+        $(this).addClass("hovered");
+      },
+      mouseleave: function () {
+        $(this).removeClass("hovered");
+      }
+  });
+
   // Fade out before follow href
   
   $(function(){
