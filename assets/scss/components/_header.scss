@@ -96,6 +96,17 @@ header {
 			li {
 				display: inline-block;
 				margin-left: 10px;
+				&.dropdown {
+					position: relative;
+					> a:after {
+						display: inline;
+						font-family: "Font Awesome 5"; 
+						font-weight: 600; 
+						content: "\f078";
+						margin-left: 6px;
+						font-size: 13px;
+					}
+				}
 			}
 		}
 	}

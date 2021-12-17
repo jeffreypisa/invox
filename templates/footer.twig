@@ -29,7 +29,16 @@
 		</div>
 		<hr>
 		<div class="footerbottom">
-			<muted>© 2021 <a href="https://www.stoerebinken.nl" target="_blank">Stoere Binken Design</a> / a Sino Biopharmaceutical Group Company</muted>
+			<div class="row">
+				<div class="col">
+					<muted>© {{ "now"|date('Y') }} {{ options.subfooter_text }}</muted>
+				</div>
+				<div class="col-auto">
+					<a href="https://www.stoerebinken.nl" target="_blank">
+						<muted> Site by Stoere Binken </muted>
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </footer>

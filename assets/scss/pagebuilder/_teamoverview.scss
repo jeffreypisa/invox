@@ -4,6 +4,15 @@
 	.ratio-3x4 {
 		padding-top: 120%;	
 		margin-bottom: 30px;
+		position: relative;
+		overflow: hidden;
+		div {
+			position: absolute;
+			top: -2px;
+			left: -2px;
+			right: -2px;
+			bottom: -2px;
+		}
 	}
 	.images {
 		position: absolute;

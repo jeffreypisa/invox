@@ -25,7 +25,7 @@
 			{% else %}
 				{% for item in item.tegels %}
 					<div class="col-sm-6 col-md-4">
-						<a href="{{ item.link }}" class="tease-post tegel{{ loop.index }}">
+						<a href="{{ item.link.url }}" target="{{ item.link.target }}" class="tease-post tegel{{ loop.index }}">
 							<div class="d-inline-block mb-1" style="width: 100%;">
 								<div class="image-holder image ratio-1x1 anime-reveal">
 									<div class="fill-space bg-cover" style="background-image: url({{ Image(item.afbeelding)|resize(1024) }})"></div>
@@ -33,7 +33,7 @@
 							</div>
 							<div class="content">
 								<div class="line bg-actie"></div>
-								<muted><small> bericht </small></muted>
+								<muted><small> {{ item.tagline }} </small></muted>
 								<h3 class="titel h5 mb-0"> {{ item.titel }}</h3>
 							</div>
 						</a>

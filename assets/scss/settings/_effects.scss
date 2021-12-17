@@ -12,6 +12,11 @@ $ease : cubic-bezier(0.16, 1, 0.3, 1);
 	}
 }
 .anime-fadein {
-	transform: translateX(-20px);
+	transform: translateY(20px);
 	opacity: 0;
+	transition: 1s $ease;
+	&.visible {
+		opacity: 1;
+		transform: translateX(0px);
+	}
 }

@@ -45,10 +45,10 @@
 @include media-breakpoint-down(lg) {
 	.btn-menu {
 		cursor: pointer;
-		position: fixed;
+		position: fixed !important;
 		background: rgba(0,0,0,.2);
-		top: 0px;
-		right: 0px;
+		top: 30px;
+		right: 30px;
 		padding: 7px 5px;
 		border-radius: 100px;
 		z-index: 100;

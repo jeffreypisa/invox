@@ -28,22 +28,26 @@
 			<div class="col-md-11 offset-md-1 col-lg-6 offset-lg-6">
 				<div class="row">
 					<div class="col-6" data-scroll data-scroll-speed="1">
-						{% if item.afbeelding1 %}
-							<div class="image1 bg-cover ratio-3x4" style="background-image: url({{ Image(item.afbeelding1).src|resize(1920) }})">
+						{% if item.afbeelding1 %} 
+							<div class="image1 ratio-3x4 mt-5"">
+								<div class="bg-cover"  style="background-image: url({{ Image(item.afbeelding1).src|resize(1920) }})"></div>
 							</div>
 						{% endif %}
 						{% if item.afbeelding2 %}
-							<div class="image2 bg-cover ratio-3x4" style="background-image: url({{ Image(item.afbeelding2).src|resize(1920) }})">
+							<div class="image2 ratio-3x4"> 
+								<div class="bg-cover"  style="background-image: url({{ Image(item.afbeelding2).src|resize(1920) }})"></div>
 							</div>
 						{% endif %}
 					</div>
 					<div class="col-6" data-scroll data-scroll-speed="-2">
 						{% if item.afbeelding3 %}
-							<div class="image3 bg-cover ratio-3x4 mt-5" style="background-image: url({{ Image(item.afbeelding3).src|resize(1920) }})">
+							<div class="image3 ratio-3x4 mt-5">
+								<div class="bg-cover" style="background-image: url({{ Image(item.afbeelding3).src|resize(1920) }})"></div>
 							</div>
 						{% endif %}
 						{% if item.afbeelding4 %}
-							<div class="image4 bg-cover ratio-3x4" style="background-image: url({{ Image(item.afbeelding4).src|resize(1920) }})">
+							<div class="image4 ratio-3x4"> 
+								<div class="bg-cover"  style="background-image: url({{ Image(item.afbeelding4).src|resize(1920) }})"></div>
 							</div>
 						{% endif %}
 					</div>

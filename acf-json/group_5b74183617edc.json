@@ -684,6 +684,25 @@
                                     "mime_types": ""
                                 },
                                 {
+                                    "key": "field_61bb44653968d",
+                                    "label": "Tagline",
+                                    "name": "tagline",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
                                     "key": "field_61362c62a00e7",
                                     "label": "Titel",
                                     "name": "titel",
@@ -706,7 +725,7 @@
                                     "key": "field_617800487b388",
                                     "label": "Link",
                                     "name": "link",
-                                    "type": "text",
+                                    "type": "link",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -715,11 +734,7 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
+                                    "return_format": "array"
                                 }
                             ]
                         }
@@ -1282,5 +1297,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1636634982
+    "modified": 1639662706
 }

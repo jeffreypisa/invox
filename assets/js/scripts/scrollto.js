@@ -1,7 +1,7 @@
 import $ from "jquery";
 
 export function scrollto() {
-  $(document).on('click', 'a[href^="#"]', function (event) {
+  $(document).on('click', 'a[href^="#"]:not([target="_blank"])', function (event) {
     event.preventDefault();
   
     $('html, body').animate({
@@ -29,7 +29,7 @@ export function scrollto() {
   // Fade out before follow href
   
   $(function(){
-    $('a[href]').click(function(){
+    $('a[href]:not([target="_blank"])').click(function(){
       event.preventDefault();
       var url = $(this).attr('href');
       $('body').addClass('disappear');

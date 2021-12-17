@@ -17,6 +17,8 @@
 				right: 0;
 				bottom: 0;
 				z-index: 1;
+				background: linear-gradient(
+				180deg, rgba(211, 0, 0, 0) 0%, rgba($dark, .8) 100%) !important;
 			}
 		}
 		&:hover {

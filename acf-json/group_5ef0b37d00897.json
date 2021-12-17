@@ -97,6 +97,41 @@
             "default_value": ""
         },
         {
+            "key": "field_61bb44b791214",
+            "label": "Footer",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_61bb44be91215",
+            "label": "Subfooter text",
+            "name": "subfooter_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_617161a9982e6",
             "label": "Favicons",
             "name": "",
@@ -424,5 +459,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1636624536
+    "modified": 1639662797
 }
