@@ -96,7 +96,7 @@ body .nf-form-content input[type=submit] {
 	&:not(:hover) {
 		&:after {
 			color: $dark;
-			margin-left: 2px;
+			margin-left: 2px; 
 		}
 		&.prev:after {
 			color: $dark;
