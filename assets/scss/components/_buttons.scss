@@ -82,7 +82,7 @@ body .nf-form-content input[type=submit] {
 	}
 	&.prev {
 		&:after {
-			float:left;
+			float:left; 
 			line-height: 30px;
 			content: "\f053";
 			margin-left: auto;
