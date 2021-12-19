@@ -27,16 +27,17 @@ export function scrollto() {
   });
 
   // Fade out before follow href
-  
+  /*
   $(function(){
     $('a[href]:not([target="_blank"])').click(function(){
       event.preventDefault();
       var url = $(this).attr('href');
       $('body').addClass('disappear');
       setTimeout(() => {
+        $('body').addClass('disappear');
         window.location = url;
       }, 1000);
     });
   });
-  
+  */
 }
