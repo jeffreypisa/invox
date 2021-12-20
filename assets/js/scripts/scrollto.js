@@ -1,6 +1,7 @@
 import $ from "jquery";
 
 export function scrollto() {
+  
   $(document).on('click', 'a[href^="#"]:not([target="_blank"])', function (event) {
     event.preventDefault();
   
@@ -9,6 +10,7 @@ export function scrollto() {
     }, 500);
   });
   
+  /*
   $(document).on('click', 'a.team', function (event) {
     event.preventDefault();
   
@@ -16,6 +18,7 @@ export function scrollto() {
       scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
   });
+  */
   
   $("a.team").on({
       mouseenter: function () {
