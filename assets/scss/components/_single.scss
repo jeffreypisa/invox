@@ -1,4 +1,9 @@
 .single {
+	.mod-header {
+		.bg-cover {
+			filter: grayscale(100%);
+		}
+	}
 	.date {
 		position: relative;
 		padding-left:20px;
