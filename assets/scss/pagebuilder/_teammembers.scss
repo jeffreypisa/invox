@@ -9,7 +9,7 @@
 	.team {
 		display: block;
 		.bg-cover {
-			filter: grayscale(100%);
+			// filter: grayscale(100%);
 			.bg-gradient {
 				position: absolute;
 				top: 50%;
@@ -24,6 +24,7 @@
 		&:hover {
 			.bg-cover {
 				// filter: grayscale(0%);
+				filter: grayscale(100%);
 			}
 		}
 	}

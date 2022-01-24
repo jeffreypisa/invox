@@ -3,19 +3,19 @@ import 'slick-carousel';
 
 export function slick_init() {	
 	
-	if ($('.mod-bannerslider').length) {
-		
-		var slick_carousel = $('.js-slick-bannerslider');
-		
-		slick_carousel.on('init', function(event, slick) {
-			  slick_carousel.find('.slick-current').removeClass('slick-active').addClass('reset-animation');
-			  
-			  $('#bannerslider_nav_0').addClass('hoverable');
-			  
-			  setTimeout( function() {
-				slick_carousel.find('.slick-current').removeClass('reset-animation').addClass('slick-active');
-			  }, 1);
-			});
+		if ($('.mod-bannerslider').length) {
+			
+			var slick_carousel = $('.js-slick-bannerslider');
+			
+			slick_carousel.on('init', function(event, slick) {
+			slick_carousel.find('.slick-current').removeClass('slick-active').addClass('reset-animation');
+			
+			$('#bannerslider_nav_0').addClass('hoverable');
+			
+			setTimeout( function() {
+			slick_carousel.find('.slick-current').removeClass('reset-animation').addClass('slick-active');
+			}, 1);
+		});
 			
 		slick_carousel.slick({
 			infinite: true,

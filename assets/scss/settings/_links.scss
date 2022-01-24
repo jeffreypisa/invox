@@ -6,7 +6,7 @@ $link-color:                              $red;
 $link-decoration:                         none;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
-$link-hover-decoration:                   underline;
+$link-hover-decoration:                   none;
 
 $stretched-link-pseudo-element:           after !default;
 $stretched-link-z-index:                  1 !default;
