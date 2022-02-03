@@ -13,7 +13,7 @@
 		
 		<main>
 			{% if post.title %}
-				<h1 class="d-none">{{ title }}</h1>
+				<h1 class="d-none">{% if title %}{{ title }} {% else %}{{ post.title }}{% endif %}</h1>
 			{% endif %}
 			{% block content %}
 				Sorry, no content
