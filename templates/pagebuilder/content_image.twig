@@ -11,7 +11,9 @@
 					{% endif %}
 					{{ item.tekst }}
 					{% if item.knop %}
-						<a href="{{ item.knop.url }}" target="{{ item.knop.target }}" class="btn btn-primary mb-3 mb-md-0"> {{ item.knop.title }} </a>
+						<a href="{{ item.knop.url }}" target="{{ item.knop.target }}" class="btn btn-primary mb-3 mb-md-0"> 
+							<span>{{ item.knop.title }} </span>
+						</a>
 					{% endif %}
 				</div>
 			</div>

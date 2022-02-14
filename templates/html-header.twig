@@ -24,19 +24,61 @@
     {{function('wp_head')}}
     
     {% set kleur_basis = options.kleur_basis %}
+    {% set kleur_secundair = options.kleur_secundair %}
     {% set kleur_actie = options.kleur_actie %}
     
     <style>
-
+        
+        /* Primair */
+        
         .mod-content ul li:after,
         .bg-basis {
             background: {{ kleur_basis }};
         }
+                 
+        .btn-secondary {
+            background: {{ kleur_basis }};
+            color: #fff;
+        }
         
-        .bg-actie,
-        .mod-bannerslider .bannerslider-nav .item a .bg,
-        .opensidemenu .btn-menu {
+        /* Secundair */
+                
+        .bg-actie {
+            background: {{ kleur_secundair }};
+        }   
+         
+        .sub.withbar,
+        .mod-bannerslider .bannerslider .slick-slide .item .sub,
+        .mod-banner.text-white .sub {
+            border-color: {{ kleur_secundair }};
+        }
+           
+        .bg-gradient {
+            background: linear-gradient(180deg, rgba({{ kleur_secundair|hex2rgb }}, 0) 0%, rgba({{ kleur_secundair|hex2rgb }}, 0.4) 100%) !important;
+        }
+        
+        .team .bg-gradient {
+            background: linear-gradient(180deg, rgba({{ kleur_secundair|hex2rgb }}, 0) 0%, rgba({{ kleur_secundair|hex2rgb }}, 0.8) 100%) !important;
+        }
+        
+        /* Actie */
+        
+        .mod-bannerslider .bannerslider-nav .item a .bg /*,
+        .opensidemenu .btn-menu */{
             background: {{ kleur_actie }};
+        }
+        
+        .btn,
+        .btn:hover,
+        .btn:focus,
+        body .nf-form-content button, 
+        body .nf-form-content input[type=button],
+        body .nf-form-content input[type=submit],
+        body .nf-form-content button:hover, 
+        body .nf-form-content input[type=button]:hover,
+        body .nf-form-content input[type=submit]:hover {
+            background: {{ kleur_actie }};
+            border-color: {{ kleur_actie }};
         }
         
         .dropdown a:hover+.dropdown-menu .nav-item a:hover, 
@@ -44,10 +86,7 @@
         .mod-mobilemenu ul li a:hover, .mod-mobilemenu ul li a:focus,
         .mod-bannerslider .selector,
         .text-white a:not(.immune):hover,
-        .mod-bannerslider .bannerslider .slick-slide .item .sub,
-        .mod-banner.text-white .sub,
         .mod-bannerslider .bannerslider-nav .item.active,
-        .sub.withbar,
         .nf-form-content .list-select-wrap .nf-field-element>div:focus, 
         .nf-form-content input:not([type=button]):focus, 
         .nf-form-content textarea:focus {
@@ -83,32 +122,6 @@
         header.text-white.nav-up ul li a:hover, 
         header.text-white.nav-down ul li a:hover {
             color: {{ kleur_actie }};
-        }
-        
-        .btn,
-        .btn:hover,
-        .btn:focus,
-        body .nf-form-content button, 
-        body .nf-form-content input[type=button],
-        body .nf-form-content input[type=submit],
-        body .nf-form-content button:hover, 
-        body .nf-form-content input[type=button]:hover,
-        body .nf-form-content input[type=submit]:hover {
-            background: {{ kleur_actie }};
-            border-color: {{ kleur_actie }};
-        }
-        
-        .btn-secondary {
-            background: {{ kleur_basis }};
-            color: #fff;
-        }
-        
-        .bg-gradient {
-            background: linear-gradient(180deg, rgba({{ kleur_actie|hex2rgb }}, 0) 0%, rgba({{ kleur_actie|hex2rgb }}, 0.4) 100%) !important;
-        }
-        
-        .team .bg-gradient {
-            background: linear-gradient(180deg, rgba({{ kleur_actie|hex2rgb }}, 0) 0%, rgba({{ kleur_actie|hex2rgb }}, 0.8) 100%) !important;
         }
         
         a:not(.btn),

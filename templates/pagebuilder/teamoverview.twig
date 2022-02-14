@@ -30,7 +30,7 @@
 					<div class="col-6" data-scroll data-scroll-speed="1">
 						{% if item.afbeelding1 %} 
 							<div class="image1 ratio-3x4 mt-5"">
-								<div class="bg-cover"  style="background-image: url({{ Image(item.afbeelding1).src|resize(1920) }})"></div>
+								<div class="bg-cover"  style="background-image: url({{ Image(item.afbeelding1.thumbnail).src|resize(1920) }})"></div>
 							</div>
 						{% endif %}
 						{% if item.afbeelding2 %}

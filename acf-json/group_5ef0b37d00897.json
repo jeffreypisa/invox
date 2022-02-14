@@ -68,8 +68,23 @@
         },
         {
             "key": "field_61715cc67081a",
-            "label": "Color | General",
+            "label": "Color | Primair",
             "name": "kleur_basis",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_620a3827c5db5",
+            "label": "Color | Secundair",
+            "name": "kleur_secundair",
             "type": "color_picker",
             "instructions": "",
             "required": 0,
@@ -459,5 +474,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1639662797
+    "modified": 1644836919
 }

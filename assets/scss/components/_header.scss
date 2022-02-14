@@ -9,17 +9,35 @@ header {
 	padding: 30px 0;
 	background: transparent;
 	.header-brand {
-		display: block;
-		background: url($logo_color);
-		background-size: contain;
-		background-repeat: no-repeat;
+		position: relative;
 		height: 48px;
 		width: 140px;
+		div {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-size: contain;
+			background-repeat: no-repeat;
+			&.logo-kleur {
+				display: block;
+			}
+			&.logo-white {
+				display: none;
+			}
+		}
 	}
 	&.text-white {
 		.header-brand {
-			display: block;
-			background-image: url($logo_white);
+			div {
+				&.logo-kleur {
+					display: none;
+				}
+				&.logo-white {
+					display: block;
+				}
+			}
 		}
 	}
 }
@@ -72,7 +90,14 @@ header {
 		&.text-white.nav-up, &.text-white.nav-down {
 			background: #fff;
 			.header-brand {
-				background: url($logo_color);
+				div {
+					&.logo-kleur {
+						display: block;
+					}
+					&.logo-white {
+						display: none;
+					}
+				}
 			}
 			.header-brand {
 				display: block;

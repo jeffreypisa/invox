@@ -16,7 +16,7 @@
 					<br>
 				{% endif %}
 				{% if item.knop %}
-					<a href="{{ item.knop.url }}" target="{{ item.knop.target }}" class="btn btn-primary mb-3" style="margin-right: 20px;"> {{ item.knop.title }} </a>
+					<a href="{{ item.knop.url }}" target="{{ item.knop.target }}" class="btn btn-primary mb-3" style="margin-right: 20px;"> <span>{{ item.knop.title }}</span> </a>
 				{% endif %}
 				{% if item.link %}
 					<a href="{{ item.link.url }}" target="{{ item.link.target }}" class="btn-link d-inline-block mb-3"> {{ item.link.title }} </a>

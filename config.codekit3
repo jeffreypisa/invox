@@ -9,10 +9,18 @@
   ],
   "creatorBuild" : "34335",
   "files" : {
-    "\/.nova\/Publishing\/Emonks.json" : {
+    "\/.nova\/Publishing\/invox.emonks.nl.json" : {
       "ft" : 524288,
       "oA" : 1,
-      "oAP" : "\/.nova\/Publishing\/Emonks-min.json",
+      "oAP" : "\/.nova\/Publishing\/invox.emonks.nl-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/.nova\/Publishing\/softhale.emonks.nl.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/.nova\/Publishing\/softhale.emonks.nl-min.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
