@@ -17,6 +17,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/.nova\/Publishing\/phion.emonks.nl.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/.nova\/Publishing\/phion.emonks.nl-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/.nova\/Publishing\/softhale.emonks.nl.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -1550,7 +1558,7 @@
     },
     "\/screenshot.png" : {
       "ft" : 32768,
-      "iS" : 13031,
+      "iS" : 595768,
       "oA" : 0,
       "oAP" : "\/screenshot.png",
       "oF" : 0,
@@ -1559,17 +1567,6 @@
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
-      "rq" : 75
-    },
-    "\/screenshot.png.webp" : {
-      "ft" : 8388608,
-      "iS" : 4314,
-      "oA" : 0,
-      "oAP" : "\/screenshot.png.webp",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/search.php" : {
