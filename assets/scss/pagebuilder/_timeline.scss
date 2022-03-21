@@ -1,0 +1,161 @@
+.mod-timeline {
+	&:first-child {
+		padding-top: 130px;
+	}
+	.head {
+		margin-bottom: 30px;
+	}
+	.year {
+		.months {
+			position: relative;
+			padding-top: 20px;
+			padding-bottom: 40px;
+			margin-bottom: 30px;
+			&:after {
+				content: '';
+				position: absolute;
+				left: 20px;
+				top: 0px;
+				bottom: 0;
+				width: 2px;
+				background: #CDCDCD;
+				
+			}
+			.month {
+				margin-bottom: 30px;
+				padding-left: 70px;
+				small {
+					color: #cdcdcd;
+				}
+				.title {
+					position: relative;
+					margin-bottom: 4px;
+					&:before {
+						content: '';
+						position: absolute;
+						top: 3px;
+						left: -61px;
+						width: 24px;
+						height: 24px;
+						border: 3px solid #CDCDCD;
+						border-radius: 199px;
+						background: #fff;
+						z-index: 1;
+						transition: 1s $ease;
+					}
+					&:after {
+						content: '';
+						position: absolute;
+						left: -50px;
+						top: 13px;
+						width: 40px;
+						height: 3px;
+						background: #CDCDCD;
+						transition: 1s $ease;
+					}
+					h6 {
+						font-size: 19px;
+						line-height: 30px;
+						display: inline;
+					}
+					a {
+						display: inline;
+						transition: 0.2s $ease;
+						h6 {
+							color: $red;
+							margin: 0;
+						}
+						&:hover {
+							h6 {
+								color: $red;
+							}
+							&:before {
+								border-color: $red;
+							}
+							&:after {
+								width: 40px;
+								
+							}
+						}
+						&:before {
+							content: '';
+							position: absolute;
+							top: 3px;
+							left: -61px;
+							width: 24px;
+							height: 24px;
+							border: 3px solid #CDCDCD;
+							border-radius: 199px;
+							background: #fff;
+							z-index: 3;
+							transition: 1s $ease;
+						}
+						&:after {
+							content: '';
+							position: absolute;
+							left: -50px;
+							top: 13px;
+							width: 0px;
+							height: 3px;
+							background: $red;
+							transition: 1s $ease;
+							z-index: 2;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.mod-timeline {
+		&:first-child {
+			padding-top: 160px;
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.mod-timeline {
+		&:first-child {
+			padding-top: 180px;
+		}
+		.head {
+			margin-bottom: 50px;
+		}
+		.year {
+			.months {
+				&:after {
+					left: 50px;
+					
+				}
+				.month {
+					padding-left: 130px;
+					.title {
+						&:before {
+							left: -91px;
+						}
+						&:after {
+							left: -90px;
+							width: 80px;
+						}
+						a {
+							&:before {
+								left: -91px;
+							}
+							&:after {
+								left: -90px;
+							}
+							&:hover {
+								&:after {
+									width: 80px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}	
+}

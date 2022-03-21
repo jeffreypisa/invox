@@ -1,0 +1,50 @@
+<section id="section{{ sectionno }}" class="mod-timeline {{ item.achtergrond }}" data-scroll-section>
+	<div class="container">
+		<div class="head">
+			<div class="row">
+				<div class="col-md-10 col-lg-8 col-xl-6">
+					{% if item.tagline %}
+						<span class="sub withbar">{{ item.tagline }}</span>
+					{% endif %}
+					<h2 class="h1">
+						{% if item.titel %}
+							{{ item.titel }} 
+						{% endif %}
+					</h2>
+					{% if item.lead %}
+						<p class="lead mb-4"> {{ item.lead }} </p>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+				{% if item.year %}
+					{% for year in item.year %}
+						<div class="year anime-fadein">
+							<h2> {{ year.year }} </h2>
+							<div class="months">
+								{% if year.month %}
+									{% for month in year.month %}
+										<div class="month">
+											<div class="title">
+												{% if month.link %}
+													<a href="{{ month.link.url }}" target="{{ month.link.target }}"> <h6> {{ month.titel }} –</h6></a> <small>{{ month.month }} {{ year.year }}</small>
+												{% else %}
+													<h6> {{ month.titel }} –</h6>  <small>{{ month.month }} {{ year.year }}</small>
+												{% endif %}
+											</div>
+											<div class="content">
+												{{ month.tekst }}
+											</div>
+										</div>
+									{% endfor %}
+								{% endif %}
+							</div>
+						</div>
+					{% endfor %}
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</section> 

@@ -33,6 +33,9 @@
 		
 	{% elseif item.acf_fc_layout == 'cta' %}
 		{% include 'pagebuilder/cta.twig' %}
+	
+	{% elseif item.acf_fc_layout == 'timeline' %}
+		{% include 'pagebuilder/timeline.twig' %}
 		
 	{% endif %}
   
