@@ -1,0 +1,98 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="content-wrapper">
+		<article class="post-type-{{ post.post_type }}" id="post-{{ post.ID }}">	
+			<section class="mod-banner d-flex align-items-center bg-dark text-white" data-scroll-section>
+				{% if post.thumbnail %}
+					<div class="fill-space" data-scroll data-scroll-speed="-3">
+						{% if post.thumbnail %}
+							<div class="bg-gradient"></div>
+						{% endif %}
+						<div class="bg-cover" style="background-image: url({{ Image(post.thumbnail).src|resize(1920) }})">
+						</div>
+					</div>
+				{% endif %}
+				<div class="container" data-scroll data-scroll-speed="-1">
+					<div class="row">
+						<div class="col-lg-10 col-xl-8">
+							{% if post.tagline %}
+								<span class="sub withbar">{{ post.tagline }}</span>
+							{% endif %}
+							<h1>
+								{% if post.titel %}
+									{{ post.titel }} 
+								{% else %}
+									{{ post.title }} 
+								{% endif %}
+							</h1>
+						</div>
+					</div>
+				</div>
+			</section> 
+			<section class="mod-single bg-white"  data-scroll-section>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
+							<div class="row">
+								<div class="col-sm d-flex align-items-start flex-column mb-4 mb-sm-0">
+									<span class="sub mb-auto">OUR AFFILIATE</span>
+									<h1 class="h2 mb-0"> {{ post.title }} </h1>
+								</div>
+								<div class="col-sm-auto">
+									{% if post.logo %}
+										<img src="{{ Image(post.logo).src }}" src="{{ Image(post.logo).alt }}" class="mb-2">
+									{% endif %}
+								</div>
+							</div>
+							<br>
+							{% if post.lead %}
+								<p class="lead mb-5">
+									{{ post.lead }}
+								</p>
+							{% endif %}
+						</div>
+						<div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">			
+							{% for item in post.get_field('contentblokken') %}
+							
+								{% if item.acf_fc_layout == 'content' %}
+									<div class="mod-content">
+										{{ item.tekst }}
+									</div>
+									
+								{% elseif item.acf_fc_layout == 'afbeelding' %}
+									{% if item.afbeelding %}
+										<div class="mod-content">
+											<img class="mb-5" src="{{ Image(item.afbeelding).src }}" src="{{ Image(item.afbeelding).alt }}">
+										</div>
+									{% endif %}
+		
+								{% elseif item.acf_fc_layout == 'quote' %}
+									<p class="quote">
+										<span class="altfont">”</span>
+										{{ item.tekst }}
+									</p>
+								
+								{% elseif item.acf_fc_layout == 'card' %}
+									<div class="card bg-greylight">
+										<div class="card-body">
+											{% if item.titel %}
+												<h4> {{ item.titel }} </h4>
+											{% endif %}
+											{{ item.tekst }}
+											{% if item.link %}
+												<a href="{{ item.link.url }}" target="{{ item.link.target }}" class="btn btn-primary mb-0"> {{ item.link.title }} </a>
+											{% endif %}
+										</div>
+									</div>
+								
+								{% endif %}
+								
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</section>
+		</article>
+	</div><!-- /content-wrapper -->
+{% endblock %}

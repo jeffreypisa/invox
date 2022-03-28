@@ -50,6 +50,29 @@ function create_posttype() {
 		)
 	);
 	
+	register_post_type( 'affiliates',
+	
+		array(
+			'labels' => array(
+				'name'                  => __( 'Affiliates' ),
+				'singular_name'         => __( 'Affiliate' ),
+				'all_items'             => __( 'All affiliates' ),
+				'add_new_item'          => __( 'Add new affiliate' ),
+				'new_item'              => __( 'New affiliate' ),
+				'add_new'               => __( 'Add new affiliate' ),
+				'edit_item'             => __( 'Edit affiliate' ),
+				'update_item'           => __( 'Update affiliate' ),
+				'view_item'             => __( 'View affiliate' ),
+				'search_items'          => __( 'Search affiliate' ),
+			),
+			'menu_icon'           		=> 'dashicons-admin-site-alt3',
+			'public' 					=> true,
+			'show_in_rest' 				=> true,
+			'has_archive' 				=> false,
+			'supports'                	=> array( 'title', 'editor', 'thumbnail' )
+		)
+	);
+	
 }
 
 add_action( 'init', 'create_posttype' ); 

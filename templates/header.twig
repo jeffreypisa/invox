@@ -1,6 +1,6 @@
 {% set headercolor = '' %}
 
-{% if fn('is_front_page') %}
+{% if fn('is_front_page') or post.post_type == 'affiliates' %}
 	{% set headercolor = 'text-white' %}
 {% endif %}
 

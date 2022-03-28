@@ -4,6 +4,42 @@
 			padding-top: 80px;
 		}
 	}
+	&.single-affiliates {
+		.quote {
+			line-height: 30px;
+			font-style: italic;
+			padding: 0 0 0 30px;
+			position: relative;
+			display: block;
+			margin-bottom: 30px;
+			span {
+				position: absolute;
+				left: 0px;
+				top: 6px;
+				font-size: 40px;
+				line-height: 30px;
+				color: #CDCDCD;
+				font-style: normal;
+			}
+			&:after {
+				position: absolute;
+				left: 8px;
+				width: 2px;
+				background: #CDCDCD;
+				content: '';
+				top: 26px;
+				bottom: 8px;
+			}
+		}
+		.card {
+			border: 0;
+			border-radius: 0;
+			margin-bottom: 30px;
+			.card-body {
+				padding: 30px;
+			}
+		}
+	}
 	.mod-header {
 		.bg-cover {
 			filter: grayscale(100%);

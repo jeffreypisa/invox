@@ -65,6 +65,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/acf-json\/group_6241ed1dc0970.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/group_6241ed1dc0970-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/acf-json\/group_61813671d04b0.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -1916,6 +1924,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/sidebar.twig",
+      "oF" : 0
+    },
+    "\/templates\/single-affiliates.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/single-affiliates.twig",
       "oF" : 0
     },
     "\/templates\/single-password.twig" : {
