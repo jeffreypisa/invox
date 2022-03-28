@@ -110,7 +110,7 @@ body .nf-form-content input[type=submit] {
 		}
 	}
 }
-
+/*
 .text-white {
 	.btn-link {
 		color: #fff;
@@ -122,6 +122,18 @@ body .nf-form-content input[type=submit] {
 		}
 		&:hover {
 			color: #fff !important;
+		}
+	}
+}
+*/
+
+.text-white {
+	.btn-link {
+		&:after {
+			color: #fff;
+		}
+		&:before {
+			background: #fff !important;
 		}
 	}
 }

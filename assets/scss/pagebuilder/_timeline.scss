@@ -132,6 +132,13 @@
 				}
 				.month {
 					padding-left: 130px;
+					small {
+						position: absolute;
+						top: 4px;
+						right: calc(100% + 100px);
+						width: 110px;
+						text-align: right;
+					}
 					.title {
 						&:before {
 							left: -91px;
