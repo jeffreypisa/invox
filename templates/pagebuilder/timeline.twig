@@ -29,9 +29,9 @@
 										<div class="month">
 											<div class="title">
 												{% if month.link %}
-													<a href="{{ month.link.url }}" target="{{ month.link.target }}"> <h6> {{ month.titel }} –</h6></a> <small>{{ month.month }} {{ year.year }}</small>
+													<a href="{{ month.link.url }}" target="{{ month.link.target }}"> <h6> {{ month.titel }} <span class="d-lg-none">–</span></h6></a> <small>{{ month.month }} {{ year.year }}</small>
 												{% else %}
-													<h6> {{ month.titel }} –</h6>  <small>{{ month.month }} {{ year.year }}</small>
+													<h6> {{ month.titel }} <span class="d-lg-none">–</span></h6>  <small>{{ month.month }} {{ year.year }}</small>
 												{% endif %}
 											</div>
 											<div class="content">

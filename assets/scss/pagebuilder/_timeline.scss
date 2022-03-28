@@ -6,6 +6,17 @@
 		margin-bottom: 30px;
 	}
 	.year {
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 90px;
+			width: 90px;
+			background: linear-gradient(180deg, rgba($greylight, 0) 0%, $greylight 100%);
+			z-index: 1;
+		}
 		.months {
 			position: relative;
 			padding-top: 20px;
@@ -19,13 +30,13 @@
 				bottom: 0;
 				width: 2px;
 				background: #CDCDCD;
-				
 			}
 			.month {
 				margin-bottom: 30px;
 				padding-left: 70px;
 				small {
-					color: #cdcdcd;
+					color: #717171;
+					font-size: 14px;
 				}
 				.title {
 					position: relative;
