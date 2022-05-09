@@ -34,16 +34,14 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
-							<div class="row">
-								<div class="col-sm d-flex align-items-start flex-column mb-4 mb-sm-0">
-									<span class="sub mb-auto">OUR AFFILIATE</span>
+							<div class="row g-0">
+								<div class="col-sm mb-4 mb-sm-0">
+									<span class="sub">{% if post.tagline %}{{ post.tagline }}{% else %}OUR AFFILIATE{% endif %}</span>
 									<h1 class="h2 mb-0"> {{ post.title }} </h1>
 								</div>
-								<div class="col-sm-auto">
-									{% if post.logo %}
-										<img src="{{ Image(post.logo).src }}" src="{{ Image(post.logo).alt }}" class="mb-2">
-									{% endif %}
-								</div>
+								{% if post.logo %}
+									<div class="col-4 col-md-3 col-lg-2 logoholder d-none d-md-block mb-1" style="background-image: url({{ Image(post.logo).src }}"></div>
+								{% endif %}
 							</div>
 							<br>
 							{% if post.lead %}

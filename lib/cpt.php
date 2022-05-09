@@ -54,21 +54,22 @@ function create_posttype() {
 	
 		array(
 			'labels' => array(
-				'name'                  => __( 'Affiliates' ),
-				'singular_name'         => __( 'Affiliate' ),
-				'all_items'             => __( 'All affiliates' ),
-				'add_new_item'          => __( 'Add new affiliate' ),
-				'new_item'              => __( 'New affiliate' ),
-				'add_new'               => __( 'Add new affiliate' ),
-				'edit_item'             => __( 'Edit affiliate' ),
-				'update_item'           => __( 'Update affiliate' ),
-				'view_item'             => __( 'View affiliate' ),
-				'search_items'          => __( 'Search affiliate' ),
+				'name'                  => __( 'Investment' ),
+				'singular_name'         => __( 'Investment' ),
+				'all_items'             => __( 'All investments' ),
+				'add_new_item'          => __( 'Add new investment' ),
+				'new_item'              => __( 'New investment' ),
+				'add_new'               => __( 'Add new investment' ),
+				'edit_item'             => __( 'Edit investment' ),
+				'update_item'           => __( 'Update investment' ),
+				'view_item'             => __( 'View investment' ),
+				'search_items'          => __( 'Search investment' ),
 			),
 			'menu_icon'           		=> 'dashicons-admin-site-alt3',
 			'public' 					=> true,
 			'show_in_rest' 				=> true,
 			'has_archive' 				=> false,
+			'rewrite' 					=> array( 'slug' => 'investment'), 
 			'supports'                	=> array( 'title', 'editor', 'thumbnail' )
 		)
 	);
