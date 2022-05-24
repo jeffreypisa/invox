@@ -1,5 +1,5 @@
 import $ from "jquery";
-import 'bootstrap';
+import bootstrap from 'bootstrap/dist/js/bootstrap.bundle';
 
 // Init plugins
 import { slick_init } from './scripts/slick.js';

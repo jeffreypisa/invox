@@ -1,0 +1,14 @@
+<a href="{{ item.link }}" class="team mb-5">
+	<div class="d-inline-block mb-1" style="width: 100%;">
+		<div class="image-holder image ratio-3x4 anime-reveal">
+			<div class="fill-space bg-cover bg-grey" style="background-image: url({{ Image(item.thumbnail)|resize(600) }})">
+				<div class="bg-gradient"></div>
+				<div class="content">
+					<h4 class="mb-1"> {{ item.title }} </h4>
+					{{ item.functie }}
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="btn btn-primary"> <span>Info</span></div>
+</a>

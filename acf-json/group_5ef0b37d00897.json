@@ -332,38 +332,6 @@
             "mime_types": ""
         },
         {
-            "key": "field_5ef0b433cf0c8",
-            "label": "Social Media",
-            "name": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_5ef0b45bcf0ca",
-            "label": "LinkedIn",
-            "name": "linkedin",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
-        },
-        {
             "key": "field_5f0ef4188e189",
             "label": "404",
             "name": "",
@@ -474,5 +442,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1644836919
+    "modified": 1653303999
 }

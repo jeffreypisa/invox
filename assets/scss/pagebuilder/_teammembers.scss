@@ -1,6 +1,47 @@
 .mod-teammembers {
 	position: relative;
 	overflow: visible;
+	.with-categories {
+		.line-last {
+			border-bottom: 1px solid #CDCDCD;
+		}
+		.accordion {
+			padding-bottom: 0px;
+		}
+		.heading {
+			padding-top: 15px;
+			border-top: 1px solid #CDCDCD;
+			position: relative;
+			padding-left: 40px;
+			h5 {
+				transition: .2s $ease;
+			}
+			i {
+				position: absolute;
+				left: 0;
+				top: 9px;
+				&.fa-times {
+					display: none;
+				}
+				&.fa-arrow-down {
+					display: block;
+				}
+			}
+			&:hover {
+				cursor: pointer;
+			}
+			&[aria-expanded=true] {
+				i {
+					&.fa-times {
+						display: block;
+					}
+					&.fa-arrow-down {
+						display: none;
+					}
+				}
+			}
+		}
+	}
 	.btn {
 		margin: -50px 0 0 30px;
 		z-index: 1;
@@ -54,6 +95,17 @@
 
 @include media-breakpoint-up(md) {
 	.mod-teammembers {
+		.with-categories {
+			.heading {
+				padding-left: 60px;
+				i {
+					top: 19px;
+				}
+			}
+			.maincontent {
+				padding-top: 0;
+			}
+		}
 		.maincontent {
 			padding-top: 60px;
 			margin-right: -100px;

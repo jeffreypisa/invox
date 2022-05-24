@@ -1,4 +1,52 @@
 <section id="section{{ sectionno }}" class="mod-teammembers d-flex align-items-center {{ item.achtergrond }}" data-scroll-section>
+	{% if item.multiple_categories and item.team_category %}
+		<div class="content with-categories w-100">
+			<div class="container">
+				<div class="accordion" id="accordion{{ sectionno }}">
+					{% for item in item.team_category %}
+						<div class="item">
+							<div class="row">
+								<div class="offset-md-1 col-md-10">
+									<a id="heading_{{ sectionno }}_{{ loop.index }}" class="heading w-100 d-block" data-bs-toggle="collapse" data-bs-target="#collapse_{{ sectionno }}_{{ loop.index }}" aria-controls="collapse_{{ sectionno }}_{{ loop.index }}">
+										<h5 class="h2"><i class="fas fa-arrow-down"></i><i class="fas fa-times"></i>  {{ item.titel }}</h5>
+									</a>
+								</div>
+							</div>
+							<div id="collapse_{{ sectionno }}_{{ loop.index }}" class="collapse" aria-labelledby="heading_{{ sectionno }}_{{ loop.index }}" data-bs-parent="#accordion{{ sectionno }}">
+								<div class="row">
+									<div class="col-md-4 offset-md-1">
+										<div class="anime-fadein">
+											<div class="maincontent">
+												{% if item.tekst %}
+												<p> {{ item.tekst }}</p>
+												{% endif %}
+											</div>
+										</div>
+										<br><br>
+										{% for item in item.team_links %}
+										{% include 'tease-team.twig' %}
+										{% endfor %}
+									</div>
+									<div class="col-md-4 offset-md-2">
+										{% for item in item.team_rechts %}
+										{% include 'tease-team.twig' %}
+										{% endfor %}
+									</div>
+								</div>
+							</div>
+							{% if loop.last %}
+								<div class="row">
+									<div class="offset-md-1 col-md-10">
+										<div class="line-last"></div>
+									</div>
+								</div>
+							{% endif %}
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	{% else %}
 	<div class="content w-100">
 		<div class="container">
 			<div class="row">
@@ -6,50 +54,25 @@
 					<div class="anime-fadein">
 						<div class="maincontent">
 							{% if item.titel %}
-								<h2> {{ item.titel }}</h2>
+							<h2> {{ item.titel }}</h2>
 							{% endif %}
 							{% if item.tekst %}
-								<p> {{ item.tekst }}</p>
+							<p> {{ item.tekst }}</p>
 							{% endif %}
 						</div>
 					</div>
 					<br><br>
 					{% for item in item.team_links %}
-						<a href="{{ item.link }}" class="team mb-5">
-							<div class="d-inline-block mb-1" style="width: 100%;">
-								<div class="image-holder image ratio-3x4 anime-reveal">
-									<div class="fill-space bg-cover bg-grey" style="background-image: url({{ Image(item.thumbnail)|resize(600) }})">
-										<div class="bg-gradient"></div>
-										<div class="content">
-											<h4 class="mb-1"> {{ item.title }} </h4>
-											{{ item.functie }}
-										</div>
-									</div>
-								</div>
-							</div>	
-							<div class="btn btn-primary"> <span>Info</span></div>
-						</a>
+					{% include 'tease-team.twig' %}
 					{% endfor %}
 				</div>
 				<div class="col-md-4 offset-md-2">
 					{% for item in item.team_rechts %}
-						<a href="{{ item.link }}" class="team mb-5">
-							<div class="d-inline-block mb-1" style="width: 100%;">
-								<div class="image-holder image ratio-3x4 anime-reveal">
-									<div class="fill-space bg-cover bg-grey" style="background-image: url({{ Image(item.thumbnail)|resize(600) }})">
-										<div class="bg-gradient"></div>
-										<div class="content">
-											<h4 class="mb-1"> {{ item.title }} </h4>
-											{{ item.functie }}
-										</div>
-									</div>
-								</div>
-							</div>	
-							<div class="btn btn-primary"> <span>Info</span></div>
-						</a>
+					{% include 'tease-team.twig' %}
 					{% endfor %}
 				</div>
 			</div>
 		</div>
 	</div>
-</section> 
+	{% endif %}
+</section>
