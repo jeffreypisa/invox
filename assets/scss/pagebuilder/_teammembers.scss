@@ -19,9 +19,11 @@
 			i {
 				position: absolute;
 				left: 0;
-				top: 9px;
+				top: 19px;
 				color: #8298ab;
 				transform: scale(.8);
+				width: 34px;
+				text-align: center;
 				&.fa-times {
 					display: none;
 				}
@@ -117,6 +119,13 @@
 
 @include media-breakpoint-up(lg) {
 	.mod-teammembers {
+		.with-categories {
+			.heading {
+				i {
+					top: 19px;
+				}
+			}
+		}
 		.maincontent {
 			padding-top: 40px;
 			margin-right: -120px;
