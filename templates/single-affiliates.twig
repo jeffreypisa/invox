@@ -61,7 +61,22 @@
 								{% elseif item.acf_fc_layout == 'afbeelding' %}
 									{% if item.afbeelding %}
 										<div class="mod-content">
-											<img class="mb-5" src="{{ Image(item.afbeelding).src }}" src="{{ Image(item.afbeelding).alt }}">
+											<div class="images">
+												<div class="row g-3">
+													{% if item.afbeelding_2 %}
+														<div class="col">
+															<div class="ratio-4x3 mb-5 bg-cover w-100"  style="background-image: url({{ Image(item.afbeelding).src }})"></div>
+														</div>
+														<div class="col">
+															<div class="ratio-4x3 mb-5 bg-cover w-100"  style="background-image: url({{ Image(item.afbeelding_2).src }})"></div>
+														</div>
+													{% else %}
+														<div class="col">
+															<img class="mb-5 w-100" src="{{ Image(item.afbeelding).src }}" alt="{{ Image(item.afbeelding).alt }}">
+														</div>
+													{% endif %}
+												</div>
+											</div>
 										</div>
 									{% endif %}
 		

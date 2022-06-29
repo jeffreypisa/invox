@@ -115,8 +115,32 @@
                     "sub_fields": [
                         {
                             "key": "field_6241ed93d0430",
-                            "label": "Afbeelding",
+                            "label": "Afbeelding 1",
                             "name": "afbeelding",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_62bc5dadc52be",
+                            "label": "Afbeelding 2",
+                            "name": "afbeelding_2",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -258,5 +282,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1648493601
+    "modified": 1656511937
 }
