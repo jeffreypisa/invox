@@ -4,6 +4,10 @@
 		background-position: center center;	
 		background-repeat: no-repeat;
 	}
+	img {
+		max-width: 100%;
+		height: auto;
+	}
 }
 .single {
 	&.single-team {
