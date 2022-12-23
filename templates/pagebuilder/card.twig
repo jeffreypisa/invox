@@ -1,0 +1,19 @@
+<section id="section{{ sectionno }}" class="mod-card {{ item.achtergrond }}" data-scroll-section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2 anime-fadein">
+				<div class="card {% if item.achtergrond == 'bg-greylight' %}bg-white{% else %}bg-greylight{% endif %}">
+					<div class="card-body">
+						{% if item.titel %}
+							<h4> {{ item.titel }} </h4>
+						{% endif %}
+						{{ item.tekst }}
+						{% if item.link %}
+							<a href="{{ item.link.url }}" target="{{ item.link.target }}" class="btn btn-primary mb-0"> {{ item.link.title }} </a>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

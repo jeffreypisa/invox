@@ -1056,6 +1056,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/assets\/scss\/pagebuilder\/_card.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/pagebuilder\/_card.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/assets\/scss\/pagebuilder\/_content.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1827,6 +1842,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/pagebuilder\/banner.twig",
+      "oF" : 0
+    },
+    "\/templates\/pagebuilder\/card.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pagebuilder\/card.twig",
       "oF" : 0
     },
     "\/templates\/pagebuilder\/content_columns.twig" : {
