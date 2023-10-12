@@ -1,22 +1,49 @@
 import $ from "jquery";
 import 'slick-carousel';
 
-export function slick_init() {	
-	
-		if ($('.mod-bannerslider').length) {
-			
-			var slick_carousel = $('.js-slick-bannerslider');
-			
-			slick_carousel.on('init', function(event, slick) {
+export function slick_init() {
+
+	var slick_banner = $('.js-slick-slider');
+
+	slick_banner.on('init', function(event, slick) {
+		slick_banner.find('.slick-current').removeClass('slick-active').addClass('reset-animation');
+
+		setTimeout(function() {
+			slick_banner.find('.slick-current').removeClass('reset-animation').addClass('slick-active');
+		}, 1);
+	});
+
+	slick_banner.slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		dots: false,
+		centerMode: true,
+		fade: true,
+		swipeToSlide: true,
+		pauseOnHover: false,
+		useTransform: true,
+		autoplay: true,
+		speed: 1000,
+		autoplaySpeed: 6000,
+		easing: 'easeInOutQuint'
+	});
+
+	if ($('.mod-bannerslider').length) {
+
+		var slick_carousel = $('.js-slick-bannerslider');
+
+		slick_carousel.on('init', function(event, slick) {
 			slick_carousel.find('.slick-current').removeClass('slick-active').addClass('reset-animation');
-			
+
 			$('#bannerslider_nav_0').addClass('hoverable');
-			
-			setTimeout( function() {
-			slick_carousel.find('.slick-current').removeClass('reset-animation').addClass('slick-active');
+
+			setTimeout(function() {
+				slick_carousel.find('.slick-current').removeClass('reset-animation').addClass('slick-active');
 			}, 1);
 		});
-			
+
 		slick_carousel.slick({
 			infinite: true,
 			slidesToShow: 1,
@@ -30,72 +57,72 @@ export function slick_init() {
 			useTransform: true,
 			autoplay: true,
 			speed: 1000,
-			autoplaySpeed: 6000,  
+			autoplaySpeed: 6000,
 			easing: 'easeInOutQuint'
 		});
-		
-		var activeItem = $('#bannerslider_nav_0');	
+
+		var activeItem = $('#bannerslider_nav_0');
 		var activeWidth = activeItem.innerWidth();
 		var activeHeight = activeItem.innerHeight();
 		var heightnav = $('.bannerslider-nav').innerHeight();
-		
-		setTimeout( function() {
+
+		setTimeout(function() {
 			var itemPos = activeItem.position();
-					  
+
 			activeItem.addClass('active');
-			
+
 			$(".selector").css({
-				"left":itemPos.left + "px", 
+				"left": itemPos.left + "px",
 				"width": activeWidth + "px",
 				"height": activeHeight + "px"
 			});
 		}, 1);
-		
+
 		var pullup = heightnav;
 		$(".bannerslider-nav").css('margin-top', pullup * -1)
-		
-		$(window).on('resize', function(){
+
+		$(window).on('resize', function() {
 			var activeWidth = activeItem.innerWidth();
 			var activeHeight = activeItem.innerHeight();
 			var heightnav = $('.bannerslider-nav').innerHeight();
-			
+
 			var itemPos = activeItem.position();
-					  
-			
+
+
 			$(".selector").css({
-				 "left":itemPos.left + "px", 
-				 "width": activeWidth + "px",
-				 "height": activeHeight + "px"
+				"left": itemPos.left + "px",
+				"width": activeWidth + "px",
+				"height": activeHeight + "px"
 			});
-			
+
 			var pullup = heightnav;
 			$(".bannerslider-nav").css('margin-top', pullup * -1)
 		});
-		
-		slick_carousel.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+
+		slick_carousel.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
 			activeItem = $('#bannerslider_nav_' + nextSlide);
-			
+
 			$('.bannerslider-nav .item').removeClass('active').removeClass('hoverable');
-			
+
 			activeItem.addClass('active');
-			
+
 			if (activeItem.hasClass('has-link')) {
 				setTimeout(function() {
 					activeItem.addClass('hoverable');
 				}, 800);
 			}
-			
+
 			activeWidth = activeItem.innerWidth();
 			activeHeight = activeItem.innerHeight();
 			var itemPos = activeItem.position();
-		  			
+
 			$(".selector").css({
-				"left":itemPos.left + "px", 
+				"left": itemPos.left + "px",
 				"width": activeWidth + "px",
 				"height": activeHeight + "px"
 			});
 		});
-		
+
 		$('.bannerslider-nav .item').on('click', function() {
 			var theid = $(this).attr('id');
 			if (theid == 'bannerslider_nav_0') {

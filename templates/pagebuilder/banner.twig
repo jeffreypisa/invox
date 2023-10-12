@@ -1,32 +1,65 @@
-<section class="mod-banner d-flex align-items-center {% if item.afbeelding %}bg-dark text-white{% else %}no-bg {{ item.achtergrond }}{% endif %}" data-scroll-section>
-	{% if item.afbeelding %}
-		<div class="fill-space" data-scroll data-scroll-speed="-3">
-			{% if item.afbeelding %}
-				<div class="bg-gradient"></div>
-			{% endif %}
-			<div class="bg-cover" style="background-image: url({{ Image(item.afbeelding).src|resize(1920) }})">
+<section class="mod-banner d-flex align-items-center {{ item.layout }} {% if item.afbeelding or item.layout == 'slider' %}bg-dark text-white{% else %}no-bg {{ item.achtergrond }}{% endif %}" data-scroll-section>
+	{% if item.layout == 'slider' %}
+		<div class="bannerslider" data-rellax-speed="1">
+			<div class="js-slick-slider">
+				{% for item in item.slider %}
+					<div class="item d-flex align-items-center">		
+						<div class="fill-space" data-scroll data-scroll-speed="-3">
+							<div class="bg-gradient"></div>
+							<div class="bg-cover" style="background-image: url({{ Image(item.afbeelding)|resize(1920) }})">
+							</div>
+						</div>
+						<div class="container" data-scroll data-scroll-speed="-1">
+							<div class="row">
+								<div class="{% if item.titel_w100 %}{% else %}col-lg-10 col-xl-8{% endif %}">
+									{% if item.tagline %}
+										<span class="sub"> {{ item.tagline }} </span>
+									{% endif %}
+									<h2 class="h1 mt-0 ml10 altfont weight-400 mb-2">
+										<div class="line">
+											<span class="text-wrapper">
+												<span class="letters">  {{ item.titel }} 
+												</span>
+											</span>
+										</div>
+									</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				{% endfor %}
 			</div>
 		</div>
-	{% endif %}
-	<div class="container" {% if item.afbeelding %}data-scroll data-scroll-speed="-1"{% endif %}>
-		<div class="row">
-			<div class="col-lg-10 col-xl-8">
-				{% if item.tagline %}
-					<span class="sub withbar">{{ item.tagline }}</span>
+	{% else %}
+		{% if item.afbeelding %}
+			<div class="fill-space" data-scroll data-scroll-speed="-3">
+				{% if item.afbeelding %}
+					<div class="bg-gradient"></div>
 				{% endif %}
-				<h2 class="h1">
-					{% if item.titel %}
-						{{ item.titel }} 
-					{% else %}
-						{{ item.title }} 
+				<div class="bg-cover" style="background-image: url({{ Image(item.afbeelding).src|resize(1920) }})">
+				</div>
+			</div>
+		{% endif %}
+		<div class="container" {% if item.afbeelding %}data-scroll data-scroll-speed="-1"{% endif %}>
+			<div class="row">
+				<div class="col-lg-10 col-xl-8">
+					{% if item.tagline %}
+						<span class="sub withbar">{{ item.tagline }}</span>
 					{% endif %}
-				</h2>
-				<div class="d-none d-lg-block">
-					{% if item.tekst %}
-						<p class="lead mb-4 d-none d-md-block"> {{ item.tekst }} </p>
-					{% endif %}
+					<h2 class="h1">
+						{% if item.titel %}
+							{{ item.titel }} 
+						{% else %}
+							{{ item.title }} 
+						{% endif %}
+					</h2>
+					<div class="d-none d-lg-block">
+						{% if item.tekst %}
+							<p class="lead mb-4 d-none d-md-block"> {{ item.tekst }} </p>
+						{% endif %}
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	{% endif %}
 </section> 

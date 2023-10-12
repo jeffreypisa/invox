@@ -12,7 +12,7 @@ section:first-child {
 	* + h4,
 	* + h5,
 	* + h6,
-	* + img {
+	*:not(source) + img {
 		margin-top: 2rem;
 	}
 	

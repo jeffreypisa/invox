@@ -1,0 +1,58 @@
+<section id="section{{ sectionno }}" class="mod-jobs {{ item.achtergrond }}" data-scroll-section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 {% if item.links_uitlijnen %}col-lg-6 offset-md-0 offset-lg-1{% else %}col-lg-8 offset-md-1 offset-lg-2{% endif %} anime-fadein">
+				{% if item.tagline %}
+					<span class="sub"> {{ item.tagline }}</span>
+				{% endif %}
+				{% if item.titel %}
+					<h2> {{ item.titel }}</h2>
+				{% endif %}
+				<div class="lead mb-5">{{ item.tekst }}</div>
+				{% for item in item.jobs %}
+					<div class="job card card-white mb-30">
+						<div class="card-header">
+							<h3 class="h4 mb-0"> {{ item.titel }} </h3>
+						</div>
+						<div class="card-body">
+							{{ item.tekst }}
+							<div class="row">
+								<div class="col-xl-6">
+									<div class="row g-0">
+										<div class="col-sm-4 col-xl-3">
+											<strong> Role title:</strong>
+										</div>
+										<div class="col">
+											{{ item.role_title }}
+										</div>
+									</div>
+									<div class="row g-0">
+										<div class="col-sm-4 col-xl-3">
+											<strong> Location:</strong>
+										</div>
+										<div class="col">
+											{{ item.location }}
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6">
+									<div class="row g-0">
+										<div class="col-sm-5">
+											<strong> Contract type:</strong>
+										</div>
+										<div class="col">
+											{{ item.contract_type }}
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer">
+							<a href="{{ item.link }}" target="_blank" class="btn btn-primary">Read more</a>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section> 

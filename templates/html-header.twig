@@ -50,7 +50,7 @@
         .sub.withbar,
         .mod-bannerslider .bannerslider .slick-slide .item .sub,
         .mod-banner.text-white .sub {
-            border-color: {{ kleur_secundair }};
+            border-color: {{ kleur_secundair }} !important;
         }
            
         .bg-gradient {
@@ -71,6 +71,7 @@
         .btn,
         .btn:hover,
         .btn:focus,
+        .btn:active,
         body .nf-form-content button, 
         body .nf-form-content input[type=button],
         body .nf-form-content input[type=submit],
@@ -79,6 +80,11 @@
         body .nf-form-content input[type=submit]:hover {
             background: {{ kleur_actie }};
             border-color: {{ kleur_actie }};
+            outline: none;
+        }
+        
+        .btn-check:checked+.btn-primary:focus,body .nf-form-content .btn-check:checked+button:focus,body .nf-form-content .btn-check:checked+input[type=button]:focus,body .nf-form-content .btn-check:checked+input[type=submit]:focus,.btn-check:active+.btn-primary:focus,body .nf-form-content .btn-check:active+button:focus,body .nf-form-content .btn-check:active+input[type=button]:focus,body .nf-form-content .btn-check:active+input[type=submit]:focus,.btn-primary:active:focus,body .nf-form-content button:active:focus,body .nf-form-content input[type=button]:active:focus,body .nf-form-content input[type=submit]:active:focus,.btn-primary.active:focus,body .nf-form-content button.active:focus,body .nf-form-content input.active[type=button]:focus,body .nf-form-content input.active[type=submit]:focus,.show>.btn-primary.dropdown-toggle:focus,body .nf-form-content .show>button.dropdown-toggle:focus,body .nf-form-content .show>input.dropdown-toggle[type=button]:focus,body .nf-form-content .show>input.dropdown-toggle[type=submit]:focus {
+            box-shadow: 0 0 0 .25rem {{ kleur_actie }};
         }
         
         .dropdown a:hover+.dropdown-menu .nav-item a:hover, 
@@ -154,6 +160,10 @@
         
         .mod-timeline .year .months .month .title a:hover:before {
             border-color: {{ kleur_actie }}
+        }
+        
+        .mod-jobs .card h3 {
+            color: {{ kleur_actie }};
         }
     </style>
 </head>

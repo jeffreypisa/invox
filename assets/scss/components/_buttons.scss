@@ -1,3 +1,5 @@
+textarea, select, input, button { outline: none; }
+
 .mod-content, .mod-categories, .mod-teamoverview, header {
 	a:not(.btn) {
 		transition: 0.15s ease-in;
@@ -22,7 +24,6 @@
 		}
 	}
 }
-	
 .btn,
 .hovered .btn,
 body .nf-form-content button, 
@@ -50,7 +51,7 @@ body .nf-form-content input[type=submit] {
 		left: -3px;
 		background: rgba(255,255,255,0.3);
 	}
-	&:hover, &:focus, &:target {
+	&:hover, &:focus, &:target, &:active {
 		color: #fff !important;
 		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
 		&:after {

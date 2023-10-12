@@ -1,0 +1,20 @@
+.mod-jobs {
+	.job {
+		margin-bottom: 80px;
+		border-radius: 0;
+		
+		.card-header {
+			padding: 0.8rem 1rem;
+		}
+		.card-footer {
+			border: 0;
+			background: transparent;
+			position: relative;
+			.btn {
+				position: absolute;
+				bottom: -30px;
+				right: 20px;
+			}
+		}
+	}
+}

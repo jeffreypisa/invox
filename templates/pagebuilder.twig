@@ -39,6 +39,9 @@
 	
 	{% elseif item.acf_fc_layout == 'card' %}
 		{% include 'pagebuilder/card.twig' %}
+	
+	{% elseif item.acf_fc_layout == 'jobs' %}
+		{% include 'pagebuilder/jobs.twig' %}
 		
 	{% endif %}
   
