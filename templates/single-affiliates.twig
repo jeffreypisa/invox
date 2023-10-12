@@ -36,7 +36,9 @@
 						<div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
 							<div class="row g-0">
 								<div class="col-sm mb-4 mb-sm-0">
-									<span class="sub">{% if post.tagline %}{{ post.tagline }}{% else %}OUR AFFILIATE{% endif %}</span>
+									{% if post.tagline %}
+										<span class="sub">{{ post.tagline }}</span>
+									{% endif %}
 									<h1 class="h2 mb-0"> {{ post.title }} </h1>
 								</div>
 								{% if post.logo %}
